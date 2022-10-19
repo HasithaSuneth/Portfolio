@@ -1,2 +1,1 @@
-# The Portfolio
-About, Resume and Portfolio
+# The [PORTFOLIO](https://hasithasuneth.github.io/portfolio/)
