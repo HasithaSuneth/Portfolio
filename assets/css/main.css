@@ -12743,3 +12743,7 @@ pre .code {
   background: url("../imgs/devider.png") no-repeat center center;
   margin: 5px 0 10px;
 }
+
+.disable-scroll {
+  overflow-y: hidden;
+}

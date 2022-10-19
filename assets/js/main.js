@@ -148,7 +148,7 @@ function openImgCert(details, gif_available = null) {
       }
     }
   }
-
+  document.querySelector("body").classList.add("disable-scroll");
   modal.style.display = "block";
   modalImg.src = source;
 }
@@ -156,11 +156,13 @@ function openImgCert(details, gif_available = null) {
 span_close.onclick = function () {
   modal.style.display = "none";
   modalImg.src = "";
+  document.querySelector("body").classList.remove("disable-scroll");
 };
 
 span_image.onclick = function () {
   modal.style.display = "none";
   modalImg.src = "";
+  document.querySelector("body").classList.remove("disable-scroll");
 };
 
 function showSlides(n) {
