@@ -184,3 +184,8 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " dot_active";
 }
+
+window.addEventListener("load", function () {
+  document.getElementById("loading").style.display = "none";
+  document.querySelector("body").classList.remove("disable-scroll");
+});
