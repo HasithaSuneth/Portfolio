@@ -816,8 +816,10 @@
             <p class="small mb-0 text-light" style="font-size: 15px; text-align:center">
                 <span>Hasitha Suneth</span>
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Created With <i
-                    class="ti-heart text-danger"></i> By <span class="text-danger"
+                <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                Created With <i class="ti-heart text-danger"></i> By <span class="text-danger"
                     title="Bootstrap 4 Themes and Dashboards">DevCRUD</span>
             </p>
         </div>
