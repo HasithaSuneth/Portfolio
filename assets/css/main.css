@@ -12189,6 +12189,10 @@ pre .code {
   background: rgba(242, 244, 247, 0.15);
 }
 
+#about {
+  scroll-margin-top: 20px;
+}
+
 .about-section {
   border-bottom: 1px solid #dee2e6;
 }
@@ -12201,6 +12205,11 @@ pre .code {
 .about-section .about-card:last-child {
   border-right: none;
 }
+
+#portfolio {
+  scroll-margin-top: 30px;
+}
+
 .portfolio-section {
   padding: 50px 0;
 }
@@ -12903,4 +12912,3 @@ pre .code {
 .loader-square:nth-of-type(7) {
   animation-delay: -10s;
 }
-
