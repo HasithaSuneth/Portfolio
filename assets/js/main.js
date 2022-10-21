@@ -145,6 +145,8 @@ function openImgCert(details, gif_available = null) {
         source = source.replace("png", "gif");
       } else if (/.jpg/i.test(source) === true) {
         source = source.replace("jpg", "gif");
+      } else if (/.webp/i.test(source) === true) {
+        source = source.replace("webp", "gif");
       }
     }
   }

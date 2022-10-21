@@ -649,7 +649,7 @@ pre code {
   background-image: url("../imgs/exp/exp_jquery.svg");
 }
 .experience__icon--bootstrap {
-  background-image: url("../imgs/exp/exp_bootstrap2.png");
+  background-image: url("../imgs/exp/exp_bootstrap.webp");
 }
 .experience__icon--git {
   background-image: url("../imgs/exp/exp_git.svg");
@@ -658,49 +658,49 @@ pre code {
   background-image: url("../imgs/exp/exp_photoshop.svg");
 }
 .experience__icon--python {
-  background-image: url("../imgs/exp/exp_python2.png");
+  background-image: url("../imgs/exp/exp_python.webp");
 }
 .experience__icon--c {
-  background-image: url("../imgs/exp/exp_c++.png");
+  background-image: url("../imgs/exp/exp_c++.webp");
 }
 .experience__icon--mickroc {
-  background-image: url("../imgs/exp/exp_mickroc.png");
+  background-image: url("../imgs/exp/exp_mickroc.webp");
 }
 .experience__icon--react {
-  background-image: url("../imgs/exp/exp_react.png");
+  background-image: url("../imgs/exp/exp_react.webp");
 }
 .experience__icon--php {
-  background-image: url("../imgs/exp/exp_php2.png");
+  background-image: url("../imgs/exp/exp_php.webp");
 }
 .experience__icon--mysql {
-  background-image: url("../imgs/exp/exp_mysql.png");
+  background-image: url("../imgs/exp/exp_mysql.webp");
 }
 .experience__icon--docker {
-  background-image: url("../imgs/exp/exp_docker.png");
+  background-image: url("../imgs/exp/exp_docker.webp");
 }
 .experience__icon--apache {
-  background-image: url("../imgs/exp/exp_apache.png");
+  background-image: url("../imgs/exp/exp_apache.webp");
 }
 .experience__icon--nginx {
-  background-image: url("../imgs/exp/exp_nginx.png");
+  background-image: url("../imgs/exp/exp_nginx.webp");
 }
 .experience__icon--director {
-  background-image: url("../imgs/exp/exp_director.png");
+  background-image: url("../imgs/exp/exp_director.webp");
 }
 .experience__icon--codeigniter {
-  background-image: url("../imgs/exp/exp_codeigniter.png");
+  background-image: url("../imgs/exp/exp_codeigniter.webp");
 }
 .experience__icon--raspberrypi {
-  background-image: url("../imgs/exp/exp_raspberry.png");
+  background-image: url("../imgs/exp/exp_raspberry.webp");
 }
 .experience__icon--arduino {
-  background-image: url("../imgs/exp/exp_arduino.png");
+  background-image: url("../imgs/exp/exp_arduino.webp");
 }
 .experience__icon--pic {
-  background-image: url("../imgs/exp/exp_pic.png");
+  background-image: url("../imgs/exp/exp_pic.webp");
 }
 .experience__icon--pcb {
-  background-image: url("../imgs/exp/exp_pcb.png");
+  background-image: url("../imgs/exp/exp_pcb.webp");
 }
 /* -------------- End Experience --------------- */
 
@@ -11850,6 +11850,13 @@ p {
   object-fit: cover;
 }
 
+.blog-card .img-holder video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .blog-card .content-holder {
   padding: 30px 20px 30px 30px;
 }
@@ -12080,13 +12087,13 @@ pre .code {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(../imgs/header.jpg);
+    url(../imgs/header.webp);
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(../imgs/header.jpg);
+    url(../imgs/header.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12749,7 +12756,7 @@ pre .code {
 .devider {
   width: 100%;
   height: 23px;
-  background: url("../imgs/devider.png") no-repeat center center;
+  background: url("../imgs/devider.webp") no-repeat center center;
   margin: 5px 0 10px;
 }
 
