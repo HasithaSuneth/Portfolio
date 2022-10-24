@@ -41,10 +41,11 @@ function currentSlide(n) {
 }
 
 // Get the modal
+var img_status = false;
+var video_status = false;
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("slider-image");
 var modalVid = document.getElementById("slider-video");
-var span_close = document.getElementsByClassName("close-slide")[0];
 var span_image = document.getElementsByClassName("modal-content")[0];
 
 function modelLinkCreator(name, link) {
@@ -190,16 +191,22 @@ function openImgCert(details, modal_type = null) {
   }
 }
 
-span_close.onclick = function () {
-  modal.style.display = "none";
-  modalImg.src = "";
-  document.querySelector("body").classList.remove("disable-scroll");
+span_image.onclick = function () {
+  img_status = true;
 };
 
-span_image.onclick = function () {
-  modal.style.display = "none";
-  modalImg.src = "";
-  document.querySelector("body").classList.remove("disable-scroll");
+modalVid.onclick = function () {
+  video_status = true;
+};
+
+modal.onclick = function () {
+  if (!img_status && !video_status) {
+    modal.style.display = "none";
+    modalImg.src = "";
+    document.querySelector("body").classList.remove("disable-scroll");
+  }
+  img_status = false;
+  video_status = false;
 };
 
 function showSlides(n) {
