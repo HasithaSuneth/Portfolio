@@ -43,7 +43,7 @@ function currentSlide(n) {
 // Get the modal
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("slider-image");
-var captionText = document.getElementById("caption");
+var modalVid = document.getElementById("slider-video");
 var span_close = document.getElementsByClassName("close-slide")[0];
 var span_image = document.getElementsByClassName("modal-content")[0];
 
@@ -67,6 +67,7 @@ function modelLinkCreator(name, link) {
   span3_node.className = "lm-button-text";
   a_node.href = link;
   a_node.target = "_blank";
+
   if (name !== "") {
     text_node.appendChild(document.createTextNode(name));
     div_node.appendChild(text_node);
@@ -118,14 +119,25 @@ function generateLinkList(data) {
   return linkList;
 }
 
-function openImgCert(details, gif_available = null) {
+function reset_video_model() {
+  modalVid.pause();
+  if (document.getElementById("slider-video-source") !== null) {
+    document.getElementById("slider-video-source").remove();
+  }
+  modalVid.load();
+}
+
+function openImgCert(details, modal_type = null) {
   let image = details;
+
   while (document.getElementById("model_link_div_id") !== null) {
     document.getElementById("model_link_div_id").remove();
   }
   if (document.getElementById("model_title_div_id") !== null) {
     document.getElementById("model_title_div_id").remove();
   }
+  reset_video_model();
+
   if (image.src !== undefined) {
     var source = image.src;
   } else {
@@ -140,7 +152,7 @@ function openImgCert(details, gif_available = null) {
     linkList.forEach((element) => {
       document.getElementById("myModal").appendChild(element);
     });
-    if (gif_available === true) {
+    if (modal_type === "gif") {
       if (/.png/i.test(source) === true) {
         source = source.replace("png", "gif");
       } else if (/.jpg/i.test(source) === true) {
@@ -148,11 +160,34 @@ function openImgCert(details, gif_available = null) {
       } else if (/.webp/i.test(source) === true) {
         source = source.replace("webp", "gif");
       }
+    } else if (modal_type === "video") {
+      if (/.png/i.test(source) === true) {
+        source = source.replace("png", "mp4");
+      } else if (/.jpg/i.test(source) === true) {
+        source = source.replace("jpg", "mp4");
+      } else if (/.webp/i.test(source) === true) {
+        source = source.replace("webp", "mp4");
+      }
     }
   }
   document.querySelector("body").classList.add("disable-scroll");
   modal.style.display = "block";
-  modalImg.src = source;
+  modalImg.style.display = "";
+  modalVid.style.display = "none";
+
+  if (modal_type === "gif") {
+    modalImg.src = source;
+  } else if (modal_type === "video") {
+    modalVid.style.display = "";
+    modalImg.style.display = "none";
+    let video_source = document.createElement("source");
+    video_source.id = "slider-video-source";
+    video_source.src = source;
+    video_source.type = "video/mp4";
+    modalVid.appendChild(video_source);
+  } else {
+    modalImg.src = source;
+  }
 }
 
 span_close.onclick = function () {
