@@ -11522,6 +11522,12 @@ p {
   margin-bottom: 0px;
 }
 
+@media (max-width: 600px) {
+  .sub-title {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
+  }
+}
+
 .icon-md {
   font-size: 22px;
 }
