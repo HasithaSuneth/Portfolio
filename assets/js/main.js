@@ -154,6 +154,8 @@ function openImgCert(details, modal_type = null) {
       document.getElementById("myModal").appendChild(element);
     });
     if (modal_type === "gif") {
+      let temp_index = source.lastIndexOf("/");
+      source = source.slice(0, temp_index) + "/gifs" + source.slice(temp_index);
       if (/.png/i.test(source) === true) {
         source = source.replace("png", "gif");
       } else if (/.jpg/i.test(source) === true) {
@@ -162,6 +164,9 @@ function openImgCert(details, modal_type = null) {
         source = source.replace("webp", "gif");
       }
     } else if (modal_type === "video") {
+      let temp_index = source.lastIndexOf("/");
+      source =
+        source.slice(0, temp_index) + "/videos" + source.slice(temp_index);
       if (/.png/i.test(source) === true) {
         source = source.replace("png", "mp4");
       } else if (/.jpg/i.test(source) === true) {
