@@ -174,6 +174,10 @@ function openImgCert(details, modal_type = null) {
       } else if (/.webp/i.test(source) === true) {
         source = source.replace("webp", "mp4");
       }
+    } else if (modal_type === "image") {
+      let temp_index = source.lastIndexOf("/");
+      source =
+        source.slice(0, temp_index) + "/images" + source.slice(temp_index);
     }
   }
   document.querySelector("body").classList.add("disable-scroll");
