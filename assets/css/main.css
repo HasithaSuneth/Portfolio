@@ -701,6 +701,21 @@ pre code {
 .experience__icon--pcb {
   background-image: url("../imgs/exp/exp_pcb.webp");
 }
+.experience__icon--wordpress {
+  background-image: url("../imgs/exp/exp_wordpress.webp");
+}
+.experience__icon--git {
+  background-image: url("../imgs/exp/exp_git.webp");
+}
+.experience__icon--cakephp {
+  background-image: url("../imgs/exp/exp_cakephp.webp");
+}
+.experience__icon--linux {
+  background-image: url("../imgs/exp/exp_linux.webp");
+}
+.experience__icon--bash {
+  background-image: url("../imgs/exp/exp_bash.webp");
+}
 /* -------------- End Experience --------------- */
 
 @media (min-width: 576px) {
