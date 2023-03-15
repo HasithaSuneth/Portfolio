@@ -1,1 +1,1 @@
-# The [PORTFOLIO](https://hasithasuneth.github.io/portfolio/)
+# The [PORTFOLIO](https://hasithasuneth.com)
