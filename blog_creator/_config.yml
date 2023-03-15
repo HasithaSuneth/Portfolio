@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+main-title: Hasitha Suneth
 title: Hasitha Suneth's Blog
 email: hasisuneth@gmail.com
 description: >-
@@ -26,6 +27,7 @@ baseurl: "blog"
 url: "blog"
 # twitter_username:
 github_username: HasithaSuneth
+linkedin_username: HasithaSuneth
 
 # Build settings
 theme: minima
