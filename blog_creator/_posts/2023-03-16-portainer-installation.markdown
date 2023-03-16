@@ -20,7 +20,7 @@ Portainer CE is available to install with Docker on Linux, Docker on WSL/Docker 
 ## Steps
 
 1. Install Docker and Docker-Compose
-2. Install & Setup Portainer
+2. Install & Set up Portainer
 
 ## Prerequisites
 
@@ -49,13 +49,13 @@ The CLI uses Docker APIs to control or interact with the Docker daemon through s
 
 Follow this [Official Guide](https://docs.docker.com/engine/install/) for install Docker on other Linux distribution systems.
 
-#### 1.1.1 Uninstall old versions
+#### 1.1.1. Uninstall old versions
 
 ```bash
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-#### 1.1.2 Set up the repository
+#### 1.1.2. Set up the repository
 
 _Update the apt package index and install packages to allow apt to use a repository over HTTPS:_
 
@@ -79,7 +79,7 @@ echo \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-#### 1.1.3 Install Docker Engine
+#### 1.1.3. Install Docker Engine
 
 ```bash
 sudo apt-get update
