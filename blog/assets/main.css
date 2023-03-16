@@ -421,6 +421,7 @@ table td {
 }
 .post-content h2 {
   font-size: 32px;
+  font-family: BlinkMacSystemFont;
 }
 @media screen and (max-width: 800px) {
   .post-content h2 {
@@ -429,6 +430,7 @@ table td {
 }
 .post-content h3 {
   font-size: 26px;
+  font-family: sans-serif;
 }
 @media screen and (max-width: 800px) {
   .post-content h3 {
