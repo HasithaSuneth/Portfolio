@@ -8,11 +8,15 @@ categories: deployment-guide
 
 # Portainer Install on Ubuntu via Docker & Docker-Compose
 
+<!-- ![Alt Text](/blog/assets/imgs/test.webp) -->
+
 ## About
 
 Portainer Community Edition (CE) is a powerful, open-source toolset that allows you to easily build and manage containers in Docker, Docker Swarm, Kubernetes, and Azure ACI. Portainer consists of two elements, the Portainer Server, and the Portainer Agent. Both elements run as lightweight Docker containers on a Docker engine.
 
-Portainer CE is available to install with Docker on Linux, Docker on WSL/Docker Desktop, and Docker on Windows Container Service. In this tutorial, we are going to install Portainer with Docker on the Linux option and use Ubuntu as the Linux distro.
+Portainer CE is available to install with Docker on Linux, Docker on WSL/Docker Desktop, and Docker on Windows Container Service.
+
+In this tutorial, we are going to install Portainer with Docker on the Linux option and use Ubuntu as the Linux distribution systems.
 
 - [Official Website](https://www.portainer.io/)
 - [Official Documentation](https://docs.portainer.io/)
@@ -86,7 +90,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-_Verify that Docker Engine is installed correctly_
+Verify that the Docker Engine is installed correctly.
 
 ```bash
 sudo systemctl is-active docker
@@ -94,35 +98,32 @@ sudo systemctl is-active docker
 
 ### 1.2. Install Docker-Compose
 
-- [Official Documentation](https://docs.docker.com/compose/install/other/)
-
-Download the latest version (in this case it is v2.16.0, this may change whenever you read this tutorial!)
+Download and install Compose standalone latest version (in this case, it is v2.16.0; refer to the [Official Documentation](https://docs.docker.com/compose/install/other/) to identify the latest version).
 
 ```bash
 curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-_Verify that Docker Engine is installed correctly_
+Verify that the Docker-Compose is installed correctly.
 
 ```bash
 sudo docker-compose --version
 ```
 
-### 1.3. (_optional_) Add your linux user to the _Docker_ group
+<!-- ### 1.3. (_optional_) Add your linux user to the _Docker_ group -->
 
-```
+<!-- ```
 sudo usermod -aG docker $USER
-```
+``` -->
 
 ## 2. Install & Set up Portainer
 
-- [Official Documentation](https://docs.portainer.io/start/install-ce/server/docker/linux)
+For further details, kindly consult the [Official Documentation](https://docs.portainer.io/start/install-ce/server/docker/linux).
 
 ### 2.1. Create a new Docker Volume
 
-This volume that Portainer Server will use to store its database.
+_This volume that Portainer Server will use to store its database._
 
 ```bash
 docker volume create portainer_data
@@ -130,7 +131,7 @@ docker volume create portainer_data
 
 ### 2.2. Launch Portainer
 
-Download and install the Portainer Server container.
+_Download and install the Portainer Server container._
 
 ```bash
 docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
@@ -138,7 +139,7 @@ docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /va
 
 ### 2.3. Logging In
 
-Logging into your Portainer Server instance by opening a web browser and going to:
+_Logging into your Portainer Server instance by opening a web browser and going to:_
 
 ```
 https://localhost:9443
