@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2023-03-16T17:01:08+05:30</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Hasitha Suneth’s Blog</title><subtitle>&quot;If you have knowledge, let others light their candles in it.&quot; ~ Margaret Fuller</subtitle><entry><title type="html">Portainer Installation/ Deployment</title><link href="http://localhost:4000/blog/deployment-guide/2023/03/16/portainer-installation.html" rel="alternate" type="text/html" title="Portainer Installation/ Deployment" /><published>2023-03-16T11:35:49+05:30</published><updated>2023-03-16T11:35:49+05:30</updated><id>http://localhost:4000/blog/deployment-guide/2023/03/16/portainer-installation</id><content type="html" xml:base="http://localhost:4000/blog/deployment-guide/2023/03/16/portainer-installation.html"><![CDATA[<h1 id="portainer-install-on-ubuntu-via-docker--docker-compose">Portainer Install on Ubuntu via Docker &amp; Docker-Compose</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2023-03-18T02:10:13+05:30</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Hasitha Suneth’s Blog</title><subtitle>&quot;If you have knowledge, let others light their candles in it.&quot; ~ Margaret Fuller</subtitle><entry><title type="html">Portainer Installation/ Deployment Guide</title><link href="http://localhost:4000/blog/deployment-guide/2023/03/16/portainer-installation.html" rel="alternate" type="text/html" title="Portainer Installation/ Deployment Guide" /><published>2023-03-16T11:35:49+05:30</published><updated>2023-03-16T11:35:49+05:30</updated><id>http://localhost:4000/blog/deployment-guide/2023/03/16/portainer-installation</id><content type="html" xml:base="http://localhost:4000/blog/deployment-guide/2023/03/16/portainer-installation.html"><![CDATA[<h1 id="portainer-install-on-ubuntu-via-docker--docker-compose">Portainer Install on Ubuntu via Docker &amp; Docker-Compose</h1>
 
 <!-- ![Alt Text](/blog/assets/imgs/test.webp) -->
 
@@ -136,4 +136,46 @@ sudo usermod -aG docker $USER
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://localhost:9443
 </code></pre></div></div>
 
-<p>Replace <code class="language-plaintext highlighter-rouge">localhost</code> with the relevant IP address or FQDN if needed, and adjust the port if you changed it earlier.</p>]]></content><author><name>Admin</name></author><category term="deployment-guide" /><summary type="html"><![CDATA[Portainer Install on Ubuntu via Docker &amp; Docker-Compose]]></summary></entry></feed>
+<p>Replace <code class="language-plaintext highlighter-rouge">localhost</code> with the relevant IP address or FQDN if needed, and adjust the port if you changed it earlier.</p>]]></content><author><name>Admin</name></author><category term="deployment-guide" /><summary type="html"><![CDATA[Portainer Install on Ubuntu via Docker &amp; Docker-Compose]]></summary></entry><entry><title type="html">Snipe-IT Installation &amp;amp; Configuration Guide</title><link href="http://localhost:4000/blog/deployment-guide/2022/06/14/snipeit-installation.html" rel="alternate" type="text/html" title="Snipe-IT Installation &amp;amp; Configuration Guide" /><published>2022-06-14T08:00:00+05:30</published><updated>2022-06-14T08:00:00+05:30</updated><id>http://localhost:4000/blog/deployment-guide/2022/06/14/snipeit-installation</id><content type="html" xml:base="http://localhost:4000/blog/deployment-guide/2022/06/14/snipeit-installation.html"><![CDATA[<h1 id="snipe-it-assets-management-system-installation-on-ubuntu-via-docker-apache--nginx">Snipe-IT (Assets Management System) Installation on Ubuntu via Docker, Apache &amp; Nginx</h1>
+
+<h2 id="about">About</h2>
+
+<p>Snipe-IT was made for asset management, to enable departments to track who has which asset, when it was purchased, which software licenses and accessories are available, and so on.</p>
+
+<p>Snipe-IT is a Free Open Source (FOSS) web based project built on Laravel and it follows a standard Laravel MVC file structure.</p>
+
+<p>This project is actively developed and they <a href="https://github.com/snipe/snipe-it/releases">release quite frequently</a>. Check out the <a href="https://snipeitapp.com/">Snipe-IT website</a> for a <a href="https://snipeitapp.com/demo">demo</a>, a comprehensive list of features, screenshots and announcements for updates on new versions.</p>
+
+<p><img src="/blog/assets/imgs/snipeit-dashboard.webp" alt="Snipe-IT Dashboard" /></p>
+
+<p><br /></p>
+<h4 id="on-the-official-website-of-the-sri-lankan-ministry-of-technology-i-made-this-guide-and-you-can-refer-to-each-section-as-follows">On the official website of the <strong><em>Sri Lankan Ministry of Technology</em></strong>, I made this guide, and you can refer to each section as follows:</h4>
+
+<ul>
+  <li>
+    <h4 id="introduction"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide" target="\_blank"><strong>Introduction</strong></a></h4>
+  </li>
+  <li>
+    <h4 id="features"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide-Features" target="\_blank"><strong>Features</strong></a></h4>
+  </li>
+  <li>
+    <h4 id="video-guide-features--configurations"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/Video%20guide" target="\_blank"><strong>Video Guide (Features &amp; Configurations)</strong></a></h4>
+  </li>
+  <li>
+    <h4 id="installation"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide-Installation" target="\_blank"><strong>Installation</strong></a></h4>
+    <ul>
+      <li>
+        <h4 id="install-snipe-it-via-docker"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide-Installation#install-snipe-it-docker" target="\_blank"><strong>Install Snipe-IT via Docker</strong></a></h4>
+      </li>
+      <li>
+        <h4 id="install-snipe-it-via-apache"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide-Installation#install-snipe-it-apache" target="\_blank"><strong>Install Snipe-IT via Apache</strong></a></h4>
+      </li>
+      <li>
+        <h4 id="install-snipe-it-via-nginx"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide-Installation#install-snipe-it-nginx" target="\_blank"><strong>Install Snipe-IT via Nginx</strong></a></h4>
+      </li>
+      <li>
+        <h4 id="pre-flight"><a href="https://mot.gov.lk/docs/resources/playbook/Guides%20and%20Tutorials/Asset%20Management%20using%20Snipe-IT/tutorial-Snipe-IT-Guide-Pre-Flight" target="\_blank"><strong>Pre-Flight</strong></a></h4>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Admin</name></author><category term="deployment-guide" /><summary type="html"><![CDATA[Snipe-IT (Assets Management System) Installation on Ubuntu via Docker, Apache &amp; Nginx]]></summary></entry></feed>
