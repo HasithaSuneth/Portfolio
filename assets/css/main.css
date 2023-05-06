@@ -716,6 +716,25 @@ pre code {
 .experience__icon--bash {
   background-image: url("../imgs/exp/exp_bash.webp");
 }
+.experience__icon--golang {
+  background-image: url("../imgs/exp/exp_golang.webp");
+}
+.experience__icon--r {
+  background-image: url("../imgs/exp/exp_r.webp");
+}
+.experience__icon--ansible {
+  background-image: url("../imgs/exp/exp_ansible.webp");
+}
+.experience__icon--jenkins {
+  background-image: url("../imgs/exp/exp_jenkins.webp");
+}
+.experience__icon--terraform {
+  background-image: url("../imgs/exp/exp_terraform.webp");
+}
+.experience__icon--web-server {
+  background-image: url("../imgs/exp/exp_web-server.webp");
+}
+
 /* -------------- End Experience --------------- */
 
 @media (min-width: 576px) {
