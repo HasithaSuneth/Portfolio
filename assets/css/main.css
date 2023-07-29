@@ -11763,6 +11763,13 @@ p {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .portfolio .filters {
+    max-width: 500px;
+  }
 }
 
 .portfolio .filters a {
