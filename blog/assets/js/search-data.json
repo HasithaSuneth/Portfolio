@@ -15,7 +15,7 @@
   },"2": {
     "doc": "Home",
     "title": "Learn to Develop, Install, and Deploy Software &amp; Systems with Easy-to-Follow Guides",
-    "content": "Welcome to my blog, where I’ll be sharing step-by-step guides for developing, installing, and deploying web and offline software and systems. My goal is to share my knowledge and findings with others who are interested in learning more about software development. I’ve found that there are many people who are interested in learning how to build their own software or deploy existing software to their systems. However, the process can be overwhelming, especially for those who are new to the field. That’s why I’ve created this blog. I want to share my expertise and provide easy-to-follow guides that anyone can use to get started with software development, installation, and deployment. Whether you’re a beginner or an experienced developer, I hope you’ll find something useful here. My main hope is that this blog will help others learn and grow in the field of software development and system administration. I believe that knowledge should be shared, and I’m excited to contribute to the community in this way. So, if you’re interested in learning more about software development, stay tuned for my upcoming posts! . Website GitHub . ",
+    "content": "Welcome to my blog, where I’ll be sharing step-by-step guides for developing, installing, and deploying web and offline software and systems. My goal is to share my knowledge and findings with others who are interested in learning more about software development and system administration. I’ve found that there are many people who are interested in learning how to build their own software or deploy existing software to their systems. However, the process can be overwhelming, especially for those who are new to the field. That’s why I’ve created this blog. I want to share my expertise and provide easy-to-follow guides that anyone can use to get started with software development, installation, and deployment. Whether you’re a beginner or an experienced developer, I hope you’ll find something useful here. My main hope is that this blog will help others learn and grow in the field of software development and system administration. I believe that knowledge should be shared, and I’m excited to contribute to the community in this way. So, if you’re interested in learning more about software development and deployment, stay tuned for my upcoming posts! . Website GitHub . ",
     "url": "/blog/#learn-to-develop-install-and-deploy-software--systems-with-easy-to-follow-guides",
     
     "relUrl": "/#learn-to-develop-install-and-deploy-software--systems-with-easy-to-follow-guides"
@@ -29,7 +29,7 @@
   },"4": {
     "doc": "OrangeHRM Deployment",
     "title": "OrangeHRM Deployment &amp; Upgrade on Linux",
-    "content": "OrangeHRM is an open-source human resource management system. | What is OrangeHRM? | Steps to follow | Install and Configure Prerequisites . | Step 01: Install PHP and the required dependencies | Step 02: Install &amp; configure MySQL Database . | Installation | Configuration | . | Step 03: Install &amp; configure a web server (Apache or Nginx) . | Installation | Configuration | . | . | Deploy OrangeHRM Software . | Download the latest or preferred version of the OrangeHRM system. | Web Server Configurations | Web Installation Process | . | Upgrade OrangeHRM Software . | Backup the MySQL Database | Download the latest or preferred version of the OrangeHRM system. | Web Server Configurations | Web Upgrade Process | . | . ",
+    "content": "OrangeHRM is an open-source human resource management system. | What is OrangeHRM? | Steps to follow | Install and Configure Prerequisites . | Step 01: Install PHP and the required dependencies | Step 02: Install &amp; configure MySQL Database | Step 03: Install &amp; configure a web server (Apache or Nginx) | . | Deploy OrangeHRM Software . | Download the latest or preferred version of the OrangeHRM system. | Web Server Configurations | Web Installation Process | . | Upgrade OrangeHRM Software . | Backup the MySQL Database | Download the latest or preferred version of the OrangeHRM system. | Web Server Configurations | Web Upgrade Process | . | Screenshots | . ",
     "url": "/blog/docs/deployments/orangehrm/#orangehrm-deployment--upgrade-on-linux",
     
     "relUrl": "/docs/deployments/orangehrm/#orangehrm-deployment--upgrade-on-linux"
@@ -70,103 +70,152 @@
     "relUrl": "/docs/deployments/orangehrm/#upgrade-orangehrm-software"
   },"10": {
     "doc": "OrangeHRM Deployment",
+    "title": "Screenshots",
+    "content": ". ",
+    "url": "/blog/docs/deployments/orangehrm/#screenshots",
+    
+    "relUrl": "/docs/deployments/orangehrm/#screenshots"
+  },"11": {
+    "doc": "OrangeHRM Deployment",
     "title": "OrangeHRM Deployment",
     "content": " ",
     "url": "/blog/docs/deployments/orangehrm/",
     
     "relUrl": "/docs/deployments/orangehrm/"
-  },"11": {
+  },"12": {
     "doc": "Portainer Deployment",
     "title": "Portainer Deployment on Linux (Ubuntu) via Docker &amp; Docker-Compose",
-    "content": "Portainer is a lightweight management UI that allows you to easily manage your different Docker environments. | What is Portainer? | Steps to follow | Prerequisites | Install Docker, and Docker-Compose . | Install Docker Engine . | Uninstall old versions | Set up the repository | Install Docker Engine | . | Install Docker-Compose | . | Install &amp; Set up Portainer . | Create a new Docker Volume | Launch Portainer | Logging In | . | . ",
+    "content": "Portainer is a lightweight management UI that allows you to easily manage your different Docker environments. | What is Portainer? | Steps to follow | Prerequisites | Install Docker, and Docker-Compose . | Install Docker Engine . | Uninstall old versions | Set up the repository | Install Docker Engine | . | Install Docker-Compose | . | Install &amp; Set up Portainer . | Create a new Docker Volume | Launch Portainer | Logging In | . | Screenshots | . ",
     "url": "/blog/docs/deployments/portainer/#portainer-deployment-on-linux-ubuntu-via-docker--docker-compose",
     
     "relUrl": "/docs/deployments/portainer/#portainer-deployment-on-linux-ubuntu-via-docker--docker-compose"
-  },"12": {
+  },"13": {
     "doc": "Portainer Deployment",
     "title": "What is Portainer?",
     "content": "Portainer Community Edition (CE) is a powerful, open-source toolset that allows you to easily build and manage containers in Docker, Docker Swarm, Kubernetes, and Azure ACI. Portainer consists of two elements, the Portainer Server, and the Portainer Agent. Both elements run as lightweight Docker containers on a Docker engine. Portainer CE is available to install with Docker on Linux, Docker on WSL/Docker Desktop, and Docker on Windows Container Service. Website Documentation . In this tutorial, we are going to install Portainer with Docker on the Linux and use Ubuntu as the Linux distribution systems. ",
     "url": "/blog/docs/deployments/portainer/#what-is-portainer",
     
     "relUrl": "/docs/deployments/portainer/#what-is-portainer"
-  },"13": {
+  },"14": {
     "doc": "Portainer Deployment",
     "title": "Steps to follow",
     "content": ". | Install Docker and Docker-Compose | Install &amp; Set up Portainer | . ",
     "url": "/blog/docs/deployments/portainer/#steps-to-follow",
     
     "relUrl": "/docs/deployments/portainer/#steps-to-follow"
-  },"14": {
+  },"15": {
     "doc": "Portainer Deployment",
     "title": "Prerequisites",
     "content": "To install Docker Engine on Ubuntu, you need the 64-bit version of one of these Ubuntu versions: . | Ubuntu Kinetic 22.10 | Ubuntu Jammy 22.04 (LTS) | Ubuntu Focal 20.04 (LTS) | Ubuntu Bionic 18.04 (LTS) | . Docker Engine is compatible with x86_64 (or amd64), armhf, arm64, and s390x architectures. If you are using another Linux distribution system, check out Docker’s official documentation for prerequisites. ",
     "url": "/blog/docs/deployments/portainer/#prerequisites",
     
     "relUrl": "/docs/deployments/portainer/#prerequisites"
-  },"15": {
+  },"16": {
     "doc": "Portainer Deployment",
     "title": "Install Docker, and Docker-Compose",
     "content": "Docker Engine is an open source containerization technology for building and containerizing your applications. Docker Engine acts as a client-server application with: . | A server with a long-running daemon process dockerd. | APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon. | A command line interface (CLI) client docker. | . The CLI uses Docker APIs to control or interact with the Docker daemon through scripting or direct CLI commands. Many other Docker applications use the underlying API and CLI. The daemon creates and manage Docker objects, such as images, containers, networks, and volumes. Install Docker Engine . | Documentation | . Official . Follow this Official Guide for install Docker Engine on other Linux distribution systems. Uninstall old versions . sudo apt-get remove docker docker-engine docker.io containerd runc . Set up the repository . Update the apt package index and install packages to allow apt to use a repository over HTTPS: . sudo apt-get update sudo apt-get install ca-certificates curl gnupg lsb-release . Add Docker’s official GPG key: . sudo mkdir -m 0755 -p /etc/apt/keyrings curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg . Use the following command to set up the repository: . echo \\ \"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \\ $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null . Install Docker Engine . sudo apt-get update sudo apt-get install docker-ce docker-ce-cli containerd.io . Verify that the Docker Engine is installed correctly. sudo systemctl is-active docker . Install Docker-Compose . Download and install Compose standalone latest version. In this case (20/03/2023), it is v2.16.0; Refer to the Official Documentation to identify the latest version. curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose sudo chmod +x /usr/local/bin/docker-compose . Verify that the Docker-Compose is installed correctly. sudo docker-compose --version . ",
     "url": "/blog/docs/deployments/portainer/#install-docker-and-docker-compose",
     
     "relUrl": "/docs/deployments/portainer/#install-docker-and-docker-compose"
-  },"16": {
+  },"17": {
     "doc": "Portainer Deployment",
     "title": "Install &amp; Set up Portainer",
     "content": "For further details, kindly consult the Official Documentation. Create a new Docker Volume . This volume that Portainer Server will use to store its database. docker volume create portainer_data . Launch Portainer . Download and install the Portainer Server container. docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce . Logging In . Logging into your Portainer Server instance by opening a web browser and going to: . https://localhost:9443 . Replace localhost with the relevant IP address or FQDN if needed, and adjust the port if you changed it earlier. ",
     "url": "/blog/docs/deployments/portainer/#install--set-up-portainer",
     
     "relUrl": "/docs/deployments/portainer/#install--set-up-portainer"
-  },"17": {
+  },"18": {
+    "doc": "Portainer Deployment",
+    "title": "Screenshots",
+    "content": ". ",
+    "url": "/blog/docs/deployments/portainer/#screenshots",
+    
+    "relUrl": "/docs/deployments/portainer/#screenshots"
+  },"19": {
     "doc": "Portainer Deployment",
     "title": "Portainer Deployment",
     "content": " ",
     "url": "/blog/docs/deployments/portainer/",
     
     "relUrl": "/docs/deployments/portainer/"
-  },"18": {
+  },"20": {
     "doc": "Snipe-IT Deployment",
     "title": "Snipe-IT Deployment on Linux (Ubuntu) via Docker, Apache &amp; Nginx",
-    "content": "Snipe-IT is web-based open-source software for asset management. | What is Snipe-IT? | Introduction | Features | Video Guide | Installation . | Install Snipe-IT via Docker | Install Snipe-IT via Apache | Install Snipe-IT via Nginx | Pre-Flight | . | . ",
+    "content": "Snipe-IT is web-based open-source software for asset management. | What is Snipe-IT? | Introduction | Features | Video Guides | Installation | Install Snipe-IT via Docker . | Install Docker Engine | Install Snipe-IT via Docker | . | Install Snipe-IT via Apache | Install Snipe-IT via Nginx | Pre-Flight | Screenshots | . ",
     "url": "/blog/docs/deployments/snipe-it/#snipe-it-deployment-on-linux-ubuntu-via-docker-apache--nginx",
     
     "relUrl": "/docs/deployments/snipe-it/#snipe-it-deployment-on-linux-ubuntu-via-docker-apache--nginx"
-  },"19": {
+  },"21": {
     "doc": "Snipe-IT Deployment",
     "title": "What is Snipe-IT?",
     "content": "Snipe-IT was made for asset management, to enable departments to track who has which asset, when it was purchased, which software licenses and accessories are available, and so on. Snipe-IT is a Free Open Source (FOSS) web based project built on Laravel and it follows a standard Laravel MVC file structure. This project is actively developed and they release quite frequently. Check out the Snipe-IT website for a demo, a comprehensive list of features, screenshots and announcements for updates on new versions. Website Documentation Demo GitHub . I made a step-by-step guide of Snipe-IT installation, configuration, and its features for the Ministry of Technology Sri Lanka’s official website. I will provide links to each section of that documentation as follows: . ",
     "url": "/blog/docs/deployments/snipe-it/#what-is-snipe-it",
     
     "relUrl": "/docs/deployments/snipe-it/#what-is-snipe-it"
-  },"20": {
+  },"22": {
     "doc": "Snipe-IT Deployment",
     "title": "Introduction",
-    "content": "Overview, introduction, and getting started guide to the Snipe-IT asset management system. Trusted Link . ",
+    "content": "Overview, introduction, and getting started guide to the Snipe-IT asset management system. Snipe-IT Introduction . ",
     "url": "/blog/docs/deployments/snipe-it/#introduction",
     
     "relUrl": "/docs/deployments/snipe-it/#introduction"
-  },"21": {
+  },"23": {
     "doc": "Snipe-IT Deployment",
     "title": "Features",
-    "content": "Main features available on the system and a guide on how to use them correctly. Trusted Link . ",
+    "content": "Main features available on the system and a guide on how to use them correctly. Snipe-IT Features . ",
     "url": "/blog/docs/deployments/snipe-it/#features",
     
     "relUrl": "/docs/deployments/snipe-it/#features"
-  },"22": {
+  },"24": {
     "doc": "Snipe-IT Deployment",
-    "title": "Video Guide",
-    "content": "This video guide includes feature reviews, configurations, and how to use the functionalities of the Snipe-IT system; it also includes the mobile application configuration and its features. Trusted Link . ",
-    "url": "/blog/docs/deployments/snipe-it/#video-guide",
+    "title": "Video Guides",
+    "content": "This video guide includes feature reviews, configurations, and how to use the functionalities of the Snipe-IT system; it also includes the mobile application configuration and its features. Snipe-IT Videos Guides . ",
+    "url": "/blog/docs/deployments/snipe-it/#video-guides",
     
-    "relUrl": "/docs/deployments/snipe-it/#video-guide"
-  },"23": {
+    "relUrl": "/docs/deployments/snipe-it/#video-guides"
+  },"25": {
     "doc": "Snipe-IT Deployment",
     "title": "Installation",
-    "content": "The installation guide covers how to deploy Snipe-IT software on a Linux (Ubuntu) system via Docker, Apache, and Nginx services. This guide was created in June 2022, and later updates of Snipe-IT may make this guide’s configuration steps slightly different. Install Snipe-IT via Docker . Install Snipe-IT via Apache . Install Snipe-IT via Nginx . Pre-Flight . ",
+    "content": "The installation guide covers how to deploy Snipe-IT software on a Linux (Ubuntu) system via Docker, Apache, and Nginx services. This guide was created in June 2022, and later updates of Snipe-IT may make this guide’s configuration steps slightly different. ",
     "url": "/blog/docs/deployments/snipe-it/#installation",
     
     "relUrl": "/docs/deployments/snipe-it/#installation"
-  },"24": {
+  },"26": {
+    "doc": "Snipe-IT Deployment",
+    "title": "Install Snipe-IT via Docker",
+    "content": "Install Docker Engine . Note . Find the official guide here. Follow this official guide for install Docker on other Linux distribution systems. 1. Uninstall old versions . sudo apt-get remove docker docker-engine docker.io containerd runc . 2. Set up the repository . | Update the apt package index and install packages to allow apt to use a repository over HTTPS: sudo apt-get update sudo apt-get install ca-certificates curl gnupg lsb-release . | Add Docker’s official GPG key: sudo mkdir -p /etc/apt/keyrings . curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg . | Use the following command to set up the repository: echo \\\"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \\$(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null . | . 3. Install Docker Engine . | Update the apt package index, and install the latest version of Docker Engine, containerd, and Docker Compose, or go to the next step to install a specific version: sudo apt-get install docker-ce docker-ce-cli containerd.io . | Verify that Docker Engine is installed correctly; sudo systemctl is-active docker . | . Install Snipe-IT via Docker . 1. Update/Upgrade installed packages . sudo apt update &amp;&amp; sudo apt upgrade . 2. Create directories for mount with Docker containers. | Create main directories sudo mkdir /var/config /var/config/snipeit . | Change the working directory to newly created snipeit directory. cd /var/config/ snipeit . | Create directories for mount with MySQL container and Snipe-IT container. sudo mkdir snipe-mysql snipe-conf snipe-backup . | . 3. Create a MySQL container with MySQL version 5.6 . Replace the placeholders with your preference. sudo docker run \\ --name snipe-mysql \\ -d \\ -e MYSQL_ROOT_PASSWORD= &lt;MYSQL_ROOT_PASSWORD&gt; \\ -e MYSQL_DATABASE=snipe \\ -e MYSQL_USER=snipe \\ -e MYSQL_PASSWORD= &lt;MYSQL_USER_PASSWORD&gt; \\ -e TZ=Asia/Colombo \\ -p 127.0.0.1:3306:3306 \\ -v /var/config/snipeit/snipe-mysql:/var/lib/mysql \\ mysql:5.6 --sql-mode=\"\" . 4. Create a Snipe-IT Docker image . Option 01: . | Generate a new snipe-it container with the latest version. sudo docker run --rm snipe/snipe-it . | . Option 02: . | Generate a new Snipe-IT container with specified version. Find the latest Snipe-IT docker image version here. sudo docker run --rm snipe/snipe-it:v6.0.2 . | . After the downloading, output should look like this; . Please re-run this container with an environment variable $APP_KEYAn example APP_KEY you could use is:base64:D5oGA+zhFSVA3VwuoZoQ21RAcwBtJv/RGiqOcZ7BUvI= . Copy the APP_KEY (“based64:D5…”) and replace it with the placeholder at the next step (step 5). 5. Start the Snipe-IT container . Option 01: SSL Disabled . | Replace the placeholders with your MySQL details (Step 3) and APP_KEY (* without an APP_KEY it won’t work). | . sudo docker create \\ --name=snipe-it \\ --link snipe-mysql:db \\ -e PUID=1000 \\ -e PGID=1000 \\ -e DB_CONNECTION=mysql \\ -e DB_HOST=snipe-mysql \\ -e DB_DATABASE=snipe \\ -e DB_USERNAME=snipe \\ -e DB_PASSWORD=[MYSQL_USER_PASSWORD] \\ -e APP_KEY=[APP_KEY] \\ -p 8082:80 \\ -v /var/config/snipeit/snipe-conf:/config \\ -v /var/config/snipeit/snipe-backup:/var/www/html/storage/app/backups \\ --restart unless-stopped \\ snipe/snipe-it #snipe/snipe-it:v6.0.2 . Option 02: SSL Enabled . | Replace the placeholders with your MySQL details (Step 3), SSL Port and APP_KEY (* without an APP_KEY it won’t work). | Later, place the SSL Key and SSL Certificate inside the snipe-it docker container using the docker cp command, at /var/lib/snipeit/ssl/snipeit-ssl.crt and /var/lib/snipeit/ssl/snipeit-ssl.key. | . sudo docker create \\ --name=snipe-it \\ --link snipe-mysql:db \\ -e PUID=1000 \\ -e PGID=1000 \\ -e DB_CONNECTION=mysql \\ -e DB_HOST=snipe-mysql \\ -e DB_DATABASE=snipe \\ -e DB_USERNAME=snipe \\ -e DB_PASSWORD=[MYSQL_USER_PASSWORD] \\ -e APP_KEY=[APP_KEY] \\ -p 8082:80 \\ -p [SSL_PORT]:443 \\ -v /var/config/snipeit/snipe-conf:/config \\ -v /var/config/snipeit/snipe-backup:/var/www/html/storage/app/backups \\ --restart unless-stopped \\ snipe/snipe-it # snipe/snipe-it:v6.0.2 . 6. Start the container. sudo docker start snipe-it . 7. Update the .env file with the site details and email configurations. | Get the docker containers details. sudo docker ps . | Get into the Snipe-IT container. sudo docker exec -it CONTAINER_ID /bin/bash . Default docker containers come with VI editor. If you want, you can install VIM or NANO editors using the following commands. apt-get update apt-get install vim nano . | Open .env file with an editor. vi .env . | Uncomment and update the basic app settings. Replace the APP_KEY placeholder with your APP_KEY (Step 4) and APP_URL with your site domain (http://example.com:8082). #-------------------------------------------- # REQUIRED: BASIC APP SETTINGS # -------------------------------------------- APP_ENV=production APP_DEBUG=false APP_KEY=&lt;APP_KEY&gt; APP_URL=http://127.0.0.1:8082 APP_TIMEZONE=Asia/Colombo APP_LOCALE=en . | Update the outgoing email server settings. # -------------------------------------------- # REQUIRED: OUTGOING MAIL SERVER SETTINGS # -------------------------------------------- MAIL_DRIVER=smtp MAIL_HOST=${MAIL_PORT_587_TCP_ADDR} MAIL_PORT=${MAIL_PORT_587_TCP_PORT} MAIL_USERNAME=${MAIL_ENV_USERNAME} MAIL_PASSWORD=${MAIL_ENV_PASSWORD} MAIL_ENCRYPTION=${MAIL_ENV_ENCRYPTION} MAIL_FROM_ADDR=${MAIL_ENV_FROM_ADDR} MAIL_FROM_NAME=${MAIL_ENV_FROM_NAME} MAIL_REPLYTO_ADDR=${MAIL_ENV_FROM_ADDR} MAIL_REPLYTO_NAME=${MAIL_ENV_FROM_NAME} . | . Example with a Gmail . Required to enable “Less secure app” settings at Gmail and generated password. email address only use to send the test email.* . # -------------------------------------------- # REQUIRED: OUTGOING MAIL SERVER SETTINGS # -------------------------------------------- MAIL_DRIVER=smtp MAIL_HOST=smtp.gmail.com MAIL_PORT=587 MAIL_USERNAME=your_username@gmail.com MAIL_PASSWORD=your_generated_password MAIL_ENCRYPTION=tls MAIL_FROM_ADDR=your_username@gmail.com MAIL_FROM_NAME=’ANY NAME’ MAIL_REPLYTO_ADDR=reciver_email@domain.com MAIL_REPLYTO_NAME=’ANY NAME’ . | Save the changes and restart the Snipe-IT container. exit sudo docker restart snipe-it . | . 8. Snipe-IT pre-flight setup . Browse to the IP address of your Ubuntu server and you should see the pre-flight page (http://example.com:8082). ",
+    "url": "/blog/docs/deployments/snipe-it/#install-snipe-it-via-docker",
+    
+    "relUrl": "/docs/deployments/snipe-it/#install-snipe-it-via-docker"
+  },"27": {
+    "doc": "Snipe-IT Deployment",
+    "title": "Install Snipe-IT via Apache",
+    "content": "1. Update and upgrade installed packages on Linux server. sudo apt update &amp;&amp; sudo apt upgrade . 2. Install Apache, MySQL, PHP, PHP-FPM and PHP dependencies. | Install Apache. sudo apt install apache2 . | Install MySQL. sudo apt install mysql-server . | Install PHP and PHP-FPM. sudo add-apt-repository universesudo apt install php-fpm php-mysql . | Install PHP-Dependencies. sudo apt-get install -y git unzip php php-curl php-mysql php-gd php-ldap php-zip php-mbstring php-xml php-bcmath php-tokenizer . | . Check the packages are installed correctly. | MySQL server version &amp; status mysql –V or service mysql status | PHP Version php --version | Apache version &amp; status apache2 -V or systemctl status apache2 | . 3. Configure MySQL Server . | Run MySQL secure installation command line wizard and secure the installation. sudo mysql_secure_installation . | . Tips . | Do you want to Install Validate Password Plugin? : Better use Yes | Change the MySQL root user password. : Enter same password twice | Do you want to remove anonymous users? : Yes | Do you want to stop root login remotely? : Better use No | Do you want to reload privileges table: Yes | . Tips . If you get the following error while between the secure installation process, kill the current process and follow these steps; Failed! Error: SET PASSWORD has no significance for user ‘root’@’localhost’ as the authentication method used doesn’t store authentication data in the MySQL server. | Login to MySQL sudo mysql | Run This ALTER Query to change the authentication parameters. Replace placeholder (newpassword) with your preference. ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'newpassword'; | . And now, you are able to run mysql_secure_installation command. 4. Create an initial database and a user for the Snipe-IT . | Login to MySQL server, provide password for MySQL root user when it prompts; sudo mysql -u root -p . | Create new database named snipeit_db. CREATE DATABASE snipeit_db; . | Create a new user named snipeit_user. Replace the password placeholder with your own. CREATE USER 'snipeit_user'@'localhost' IDENTIFIED BY 'password'; . | Grant permissions to the user (snipeit_user) on the database (snipeit_db). GRANT ALL PRIVILEGES ON snipeit_db.* TO 'snipeit_user'@'localhost'; . | Flush the privileges flush privileges; . | Exit from the MySQL server. quit; . | Restart MySQL service sudo service mysql restart . | . 5. Download the Snipe-IT latest version. | Change working directory to “/var/www/” cd /var/www/ . | Clone recent version of the Snipe-IT from GIT into a local folder (snipeit). sudo git clone https://github.com/snipe/snipe-it snipeit . | . 6. Update the .env file with the site, database and email configuration details. | Change working directory to “/var/www/snipeit/” cd /var/www/snipeit/ . | Make a copy of .env environmental file sudo cp .env.example .env . | Open .env file with a text editor. sudo vi .env or sudo nano .env . | Update the basic app settings. Replace the APP_URL with your domain (http://example.com). #-------------------------------------------- # REQUIRED: BASIC APP SETTINGS # -------------------------------------------- APP_ENV=production APP_DEBUG=false APP_KEY=&lt;APP_KEY&gt; APP_URL=http://127.0.0.1:8082 APP_TIMEZONE=Asia/Colombo APP_LOCALE=en . | Update the database settings. Replace the “DB_PASSWORD” placeholder with your MySQL snipeit user’s password. # -------------------------------------------- # REQUIRED: DATABASE SETTINGS # -------------------------------------------- DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_DATABASE=snipeit_db DB_USERNAME=snipeit_user DB_PASSWORD=&lt;password&gt; DB_PREFIX=null DB_DUMP_PATH='/usr/bin' DB_CHARSET=utf8mb4 DB_COLLATION=utf8mb4_unicode_ci . | Update the outgoing email server settings. # -------------------------------------------- # REQUIRED: OUTGOING MAIL SERVER SETTINGS # -------------------------------------------- MAIL_DRIVER=smtp MAIL_HOST=${MAIL_PORT_587_TCP_ADDR} MAIL_PORT=${MAIL_PORT_587_TCP_PORT} MAIL_USERNAME=${MAIL_ENV_USERNAME} MAIL_PASSWORD=${MAIL_ENV_PASSWORD} MAIL_ENCRYPTION=${MAIL_ENV_ENCRYPTION} MAIL_FROM_ADDR=${MAIL_ENV_FROM_ADDR} MAIL_FROM_NAME=${MAIL_ENV_FROM_NAME} MAIL_REPLYTO_ADDR=${MAIL_ENV_FROM_ADDR} MAIL_REPLYTO_NAME=${MAIL_ENV_FROM_NAME} . | Save the changes and exit. | . 7. Update folder permissions in the Snipe-IT root directory to the user of the Apache. sudo chown -R www-data:www-data /var/www/snipeit/ sudo chmod -R 755 storage public/uploads . 8. Download &amp; Install composer. | Change working directory to the Snipe-IT install directory. cd /var/www/snipeit . | Download the composer. curl -sS https://getcomposer.org/installer | php . | For local composer installations. php composer.phar install --no-dev --prefer-source . | For global composer installations. composer install --no-dev --prefer-source . | . 9. Generate an APP_Key for the .env file. | sudo php artisan key:generate . | Verify the generated APP_Key by opening the .env file and check “APP_KEY” value. cat /var/www/snipeit/.envornano /var/www/snipeit/.env . | . 10. Apache server configurations . | Create a new site configuration file with your preferred name. sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/snipeit.conf . | Open the configuration file. sudo nano /etc/apache2/sites-available/snipeit.conf . | Add site content as follows, Replace Server Name to your Ubuntu Server’s IP address, and Document root and directory locations to Snipe-IT installation directory public folder (…/snipeit/public/). | . &lt;VirtualHost *:80&gt; &lt;Directory /var/www/snipeit/public/&gt; Allow From All AllowOverride None Options None &lt;/Directory&gt; DocumentRoot /var/www/snipeit/public/ ServerName 127.0.0.1 # Other directives here RewriteEngine On # From public/.htaccess RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d RewriteCond %{REQUEST_URI} (.+)/$ RewriteRule ^ %1 [L,R=301] RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-f RewriteRule ^ /index.php [L] &lt;/VirtualHost&gt; . | Disable the default site sudo a2dissite 000-default.conf . | Enable the new site. sudo a2ensite snipeit.conf . | Restart the Apache service sudo systemctl reload apache2 . | . 11. Snipe-IT pre-flight setup . Browse to IP address of your Ubuntu server and you should see the pre-flight page (http://example.com). ",
+    "url": "/blog/docs/deployments/snipe-it/#install-snipe-it-via-apache",
+    
+    "relUrl": "/docs/deployments/snipe-it/#install-snipe-it-via-apache"
+  },"28": {
+    "doc": "Snipe-IT Deployment",
+    "title": "Install Snipe-IT via Nginx",
+    "content": "1. Update and upgrade installed packages on Linux server. sudo apt update &amp;&amp; sudo apt upgrade . 2. Install NGINX, MySQL, PHP, PHP-FPM and PHP dependencies. | Install NGINX. sudo apt install nginx . | Install MySQL. sudo apt install mysql-server . | Install PHP and PHP-FPM. sudo add-apt-repository universesudo apt install php-fpm php-mysql . | Install PHP-Dependencies. sudo apt-get install -y git unzip php php-curl php-mysql php-gd php-ldap php-zip php-mbstring php-xml php-bcmath php-tokenizer . Check that the packages are installed correctly. | . 3. Configure MySQL Server . | Run MySQL secure installation command line wizard and secure the installation. sudo mysql_secure_installation . | . 4. Create an initial database and a user for the Snipe-IT . | Login to MySQL server, provide password for MySQL root user when it prompts; sudo mysql -u root -p . | Create new database named snipeit_db. CREATE DATABASE snipeit_db; . | Create a new user named snipeit_user. Replace the password placeholder with your own. CREATE USER 'snipeit_user'@'localhost' IDENTIFIED BY 'password'; . | Grant permissions to the user (snipeit_user) on the database (snipeit_db). GRANT ALL PRIVILEGES ON snipeit_db.* TO 'snipeit_user'@'localhost'; . | Flush the privileges flush privileges; . | Exit from the MySQL server. quit; . | Restart MySQL service sudo service mysql restart . | . 5. Download the Snipe-IT latest version. | Change working directory to “/var/www/” cd /var/www/ . | Clone recent version of the Snipe-IT from GIT into a local folder (snipeit). sudo git clone https://github.com/snipe/snipe-it snipeit . | . 6. Update the .env file with the site, database and email configuration details. | Change working directory to “/var/www/snipeit/” cd /var/www/snipeit/ . | Make a copy of .env environmental file sudo cp .env.example .env . | Open .env file with a text editor. sudo vi .env or sudo nano .env . | Update the basic app settings. Replace the APP_URL with your domain (http://example.com). #-------------------------------------------- # REQUIRED: BASIC APP SETTINGS # -------------------------------------------- APP_ENV=production APP_DEBUG=false APP_KEY=ChangeMe APP_URL=http://127.0.0.1 APP_TIMEZONE='UTC' APP_LOCALE=en MAX_RESULTS=500 . | Update the database settings. Replace the “DB_PASSWORD” placeholder with your MySQL snipeit user’s password. # -------------------------------------------- # REQUIRED: DATABASE SETTINGS # -------------------------------------------- DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_DATABASE=snipeit_db DB_USERNAME=snipeit_user DB_PASSWORD=&lt;password&gt; DB_PREFIX=null DB_DUMP_PATH='/usr/bin' DB_CHARSET=utf8mb4 DB_COLLATION=utf8mb4_unicode_ci . | Update the outgoing email server settings. # -------------------------------------------- # REQUIRED: OUTGOING MAIL SERVER SETTINGS # -------------------------------------------- MAIL_DRIVER=smtp MAIL_HOST=email-smtp.us-west-2.amazonaws.com MAIL_PORT=587 MAIL_USERNAME=YOURUSERNAME MAIL_PASSWORD=YOURPASSWORD MAIL_ENCRYPTION=null MAIL_FROM_ADDR=you@example.com MAIL_FROM_NAME='Snipe-IT' MAIL_REPLYTO_ADDR=you@example.com MAIL_REPLYTO_NAME='Snipe-IT' MAIL_AUTO_EMBED_METHOD='attachment' . | Save the changes and exit. | . 7. Update folder permissions in the Snipe-IT root directory to the user of the Nginx. sudo chown -R www-data:www-data /var/www/snipeit/sudo chmod -R 755 storage public/uploads . 8. Download &amp; Install composer. | Change working directory to the Snipe-IT install directory. cd /var/www/snipeit . | Download the composer. curl -sS https://getcomposer.org/installer | php . | For local composer installations. php composer.phar install --no-dev --prefer-source . | For global composer installations. composer install --no-dev --prefer-source . | . 9. Generate an APP_Key for the .env file. | sudo php artisan key:generate . | Verify the generated APP_Key by opening the .env file and check “APP_KEY” value. cat /var/www/snipeit/.envornano /var/www/snipeit/.env . | . 10. NGINX server configurations . | Create a new site with your preferred name. sudo nano /etc/nginx/sites-available/site_name . | Add site content as follows, Replace Server Name to your Ubuntu Server’s IP address, root location to Snipe-IT installation directory public folder, and the PHP-FPM version (Ex: php-fpm7.4 as php7.4-fpm). | . server { listen 80; listen [::]:80; server_name 127.0.0.1; root /var/www/snipeit/public/; index index.php index.html index.htm; access_log /var/log/nginx/site_name.access.log; error_log /var/log/nginx/site_name.error.log; location / { try_files $uri $uri/ /index.php$is_args$args; } location ~ \\.php$ { include snippets/fastcgi-php.conf; fastcgi_pass unix:/var/run/php/php7.4-fpm.sock; include fastcgi_params; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; fastcgi_intercept_errors on; } } . | Enable the new site. sudo ln -s /etc/nginx/sites-available/site_name /etc/nginx/sites-enabled/ . | Disable default site sudo unlink /etc/nginx/sites-enabled/default . | Restart Nginx service sudo service nginx restart . | . 11. Snipe-IT pre-flight setup . Browse to IP address of your Ubuntu server and you should see the pre-flight page (http://example.com). ",
+    "url": "/blog/docs/deployments/snipe-it/#install-snipe-it-via-nginx",
+    
+    "relUrl": "/docs/deployments/snipe-it/#install-snipe-it-via-nginx"
+  },"29": {
+    "doc": "Snipe-IT Deployment",
+    "title": "Pre-Flight",
+    "content": "Snipe-IT Pre-Flight . ",
+    "url": "/blog/docs/deployments/snipe-it/#pre-flight",
+    
+    "relUrl": "/docs/deployments/snipe-it/#pre-flight"
+  },"30": {
+    "doc": "Snipe-IT Deployment",
+    "title": "Screenshots",
+    "content": ". ",
+    "url": "/blog/docs/deployments/snipe-it/#screenshots",
+    
+    "relUrl": "/docs/deployments/snipe-it/#screenshots"
+  },"31": {
     "doc": "Snipe-IT Deployment",
     "title": "Snipe-IT Deployment",
     "content": " ",
