@@ -11962,6 +11962,16 @@ p {
   font-size: 13px;
 }
 
+.editor {
+  margin-right: 10px;
+  color: #444;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  opacity: 0.7;
+  font-size: 13px;
+}
+
 .blog-card .content-holder .read-more {
   text-decoration: none;
   margin-top: 20px;
