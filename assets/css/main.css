@@ -11802,7 +11802,7 @@ p {
   }
 }
 
-.portfolio .filters a {
+.portfolio .filters span {
   -webkit-flex-basis: 0;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -11818,20 +11818,20 @@ p {
   -webkit-transition: 0.3s;
 }
 
-.portfolio .filters a:first-child {
+.portfolio .filters span:first-child {
   margin-left: 0;
 }
 
-.portfolio .filters a:last-child {
+.portfolio .filters span:last-child {
   margin-right: 0;
 }
 
-.portfolio .filters a:hover {
+.portfolio .filters span:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
-.portfolio .filters a.active {
+.portfolio .filters span.active {
   opacity: 1;
   background: #201192;
   color: #fff;

@@ -9,7 +9,7 @@ $(window).on("load", function () {
       queue: !1,
     },
   }),
-    $(".filters a").click(function () {
+    $(".filters span").click(function () {
       event.preventDefault();
       $(".filters .active").removeClass("active"), $(this).addClass("active");
       var i = $(this).attr("data-filter");
