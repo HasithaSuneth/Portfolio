@@ -10,6 +10,7 @@ $(window).on("load", function () {
     },
   }),
     $(".filters a").click(function () {
+      event.preventDefault();
       $(".filters .active").removeClass("active"), $(this).addClass("active");
       var i = $(this).attr("data-filter");
       return (
