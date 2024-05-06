@@ -589,6 +589,27 @@ pre code {
   margin-left: auto;
 }
 
+.header-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.header-text-h4 {
+  font-size: 1.5rem;
+}
+
+.header-text-h2 {
+  font-size: 2rem;
+}
+
+.header-text-h6 {
+  font-size: 1rem;
+}
+
 /* --------------- Start Experience --------------- */
 .experience__icons-wrapper {
   margin-bottom: 10px;
