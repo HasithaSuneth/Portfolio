@@ -12388,7 +12388,7 @@ pre .code {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #828299;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -12403,7 +12403,8 @@ pre .code {
 
 .slide-prev:hover,
 .slide-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  color: #5b29ff;
+  /* background-color: rgba(0, 0, 0, 0.8); */
 }
 
 .slide-numbertext {
