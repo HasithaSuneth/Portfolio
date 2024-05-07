@@ -86,37 +86,28 @@ function modelLinkCreator(name, link) {
   return div_node;
 }
 
-function mainTitleCreator(data) {
-  let main_title = "";
-  if (/\<([^)]+)\>/i.test(data)) {
-    main_title = data.match(/\<([^)]+)\>/)[1];
-  }
-  if (main_title !== "") {
+function mainTitleCreator(title) {
+  // let main_title = "";
+  // if (/\<([^)]+)\>/i.test(data)) {
+  //   main_title = data.match(/\<([^)]+)\>/)[1];
+  // }
+  if (title !== "") {
     let div_node = document.createElement("div");
     let title_node = document.createElement("h2");
     div_node.className = "model_title_div_class";
     div_node.id = "model_title_div_id";
     title_node.className = "model_title_text";
-    title_node.appendChild(document.createTextNode(main_title));
+    title_node.appendChild(document.createTextNode(title));
     div_node.appendChild(title_node);
     return div_node;
   }
   return null;
 }
 
-function generateLinkList(data) {
+function generateLinkList(dataList) {
   let linkList = [];
-  const mainListArray = data.split("^");
-  mainListArray.forEach((element, i) => {
-    let temp_name = "";
-    let temp_link = "";
-    if (/\(([^)]+)\)/i.test(element)) {
-      temp_name = element.match(/\(([^)]+)\)/)[1];
-    }
-    if (/\{([^)]+)\}/i.test(element)) {
-      temp_link = element.match(/\{([^)]+)\}/)[1];
-    }
-    linkList.push(modelLinkCreator(temp_name, temp_link));
+  dataList.forEach((data) => {
+    linkList.push(modelLinkCreator(data.name, data.link));
   });
   return linkList;
 }
@@ -143,9 +134,14 @@ function openImgCert(details, modal_type = null) {
   if (image.src !== undefined) {
     var source = image.src;
   } else {
-    var source = image.getElementsByTagName("img")[0].src;
-    let mainTitle = mainTitleCreator(image.getElementsByTagName("img")[0].alt);
-    let linkList = generateLinkList(image.getElementsByTagName("img")[0].alt);
+    const imageElement = image.getElementsByTagName("img")[0];
+    const moreInfoList = JSON.parse(imageElement.getAttribute("moreinfo"));
+
+    var source = imageElement.src;
+
+    let mainTitle = mainTitleCreator(imageElement.alt);
+    let linkList = generateLinkList(moreInfoList);
+
     if (mainTitle !== null) {
       document
         .getElementById("myModal")

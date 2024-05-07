@@ -12605,6 +12605,19 @@ pre .code {
   margin-bottom: 10px;
 }
 
+.mobile-mode {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-mode {
+    display: none;
+  }
+  .mobile-mode {
+    display: block;
+  }
+}
+
 @media (max-width: 500px) {
   .model_link_text {
     font-size: medium;
