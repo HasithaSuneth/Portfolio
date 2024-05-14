@@ -133,6 +133,9 @@ function openImgCert(details, modal_type = null) {
 
   if (image.src !== undefined) {
     var source = image.src;
+    if (/mobile/i.test(source)) {
+      source = source.replace("mobile", "scale");
+    }
   } else {
     const imageElement = image.getElementsByTagName("img")[0];
     const moreInfoList = JSON.parse(imageElement.getAttribute("moreinfo"));
@@ -175,6 +178,10 @@ function openImgCert(details, modal_type = null) {
       let temp_index = source.lastIndexOf("/");
       source =
         source.slice(0, temp_index) + "/images" + source.slice(temp_index);
+    } else {
+      let temp_index = source.lastIndexOf("/");
+      source =
+        source.slice(0, temp_index) + "/scale" + source.slice(temp_index);
     }
   }
   document.querySelector("body").classList.add("disable-scroll");

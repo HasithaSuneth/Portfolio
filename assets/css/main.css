@@ -12608,6 +12608,9 @@ pre .code {
 .mobile-mode {
   display: none;
 }
+.cert-mobile-mode {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .desktop-mode {
@@ -12615,6 +12618,9 @@ pre .code {
   }
   .mobile-mode {
     display: block;
+  }
+  .cert-mobile-mode {
+    display: inline-block;
   }
 }
 
