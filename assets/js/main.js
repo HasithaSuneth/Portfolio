@@ -153,6 +153,8 @@ function openImgCert(details, modal_type = null) {
     linkList.forEach((element) => {
       document.getElementById("myModal").appendChild(element);
     });
+    document.getElementById("myModal").style.paddingBottom = "10px";
+
     if (modal_type === "gif") {
       let temp_index = source.lastIndexOf("/");
       source = source.slice(0, temp_index) + "/gifs" + source.slice(temp_index);

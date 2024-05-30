@@ -12404,6 +12404,7 @@ pre .code {
 /* --------------- End - SlideShow --------------- */
 
 /* --------------- Start - Model Function --------------- */
+
 .model_title_div_class {
   display: flex;
   justify-content: center;
@@ -12419,20 +12420,21 @@ pre .code {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .model_link_text {
-  display: inline;
+  display: inline-block;
   text-align: center;
+  height: 41px;
+  line-height: 41px;
   font-family: "Lobster", cursive;
   color: white;
   background-color: #282936;
-  padding-top: 2px;
-  padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 5px;
-  border-radius: 20px;
+  margin: 0;
+  border-radius: 20px 0 0 20px;
 }
 
 .model_link_img {
@@ -12476,7 +12478,6 @@ pre .code {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
-  margin-left: 10px;
 }
 
 #learn-more-id.learn-more {
@@ -12490,9 +12491,9 @@ pre .code {
   display: block;
   margin: 0;
   width: 3rem;
-  height: 3rem;
+  height: 2.55rem;
   background: #282936;
-  border-radius: 1.625rem;
+  border-radius: 0 1.625rem 1.625rem 0;
 }
 
 #learn-more-id.learn-more .lm-circle .lm-icon {
@@ -12531,7 +12532,7 @@ pre .code {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0.6rem 0;
+  padding: 0.3rem 0;
   margin: 0 0 0 1.7rem;
   color: rgb(0, 21, 128);
   font-size: large;
