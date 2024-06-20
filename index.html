@@ -25,7 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/44b83b4405.js" crossorigin="anonymous"></script>
     <!-- Bootstrap + main styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/main.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -112,6 +113,12 @@
             </div>
         </div>
     </nav>
+
+    <label id="theme-switch" class="theme-switch">
+        <input type="checkbox" id="theme-slider">
+        <span class="theme-slider theme-round"></span>
+    </label>
+
     <about role="region" aria-labelledby="about-section">
         <div id="about" class="container-fluid bg-light">
             <div class="row about-section">
@@ -1245,7 +1252,8 @@
     <blog role="region" aria-labelledby="blog-section">
         <section class="section bg-light" id="blog">
             <div class="container">
-                <span class="mb-5 header-text header-text-h2">Latest <span class="expertise-icon">News</span></span>
+                <span class="mb-5 header-text header-text-h2 main-title">Latest <span
+                        class="expertise-icon">News</span></span>
                 <div class="row">
                     <!-- blog-card -->
                     <div class="blog-card">
@@ -1262,9 +1270,9 @@
                             </a>
 
                             <p class="post-details">
-                                <span class="text-black-100 editor">2023/03 - By: Admin</span>
+                                <span class="editor">2023/03 - By: Admin</span>
                                 <a href="#contact" aria-label="contact"><i class="ti-heart text-danger"></i>
-                                    <i class="ti-comment"></i></a>
+                                    <i class="ti-comment text-danger"></i></a>
                             </p>
                             <p>Welcome to my blog, where I’ll be sharing step-by-step guides for developing, installing,
                                 and
@@ -1301,9 +1309,9 @@
                             </a>
 
                             <p class="post-details">
-                                <span class="text-black-100 editor">2021/07 - By: Admin</span>
+                                <span class="editor">2021/07 - By: Admin</span>
                                 <a href="#contact" aria-label="contact"><i class="ti-heart text-danger"></i>
-                                    <i class="ti-comment"></i></a>
+                                    <i class="ti-comment text-danger"></i></a>
                             </p>
 
                             <p>The aim of this project is design a road traffic light system,
@@ -1353,9 +1361,9 @@
                             </a>
 
                             <p class="post-details">
-                                <span class="text-black-100 editor">2015/04 - By: Admin</span>
+                                <span class="editor">2015/04 - By: Admin</span>
                                 <a href="#contact" aria-label="contact"><i class="ti-heart text-danger"></i>
-                                    <i class="ti-comment"></i></a>
+                                    <i class="ti-comment text-danger"></i></a>
                             </p>
                             <p>The MikroC tutorial was created to demonstrate different methods to interact with PIC
                                 microcontrollers. Proteus simulation software was used to run the simulations.
@@ -1469,6 +1477,35 @@
         gtag('js', new Date());
         gtag('config', 'G-S14Z4LWCLT');
     </script>
+
+    <!-- Theme switch -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const themeToggle = document.getElementById('theme-slider');
+            const themeStyle = document.getElementById('theme-style');
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme) {
+                themeStyle.setAttribute('href', savedTheme);
+                if (savedTheme === 'main-dark.css') {
+                    themeToggle.checked = true;
+                }
+            }
+
+            function toggleTheme() {
+                if (themeStyle.getAttribute('href') === 'assets/css/main.css') {
+                    themeStyle.setAttribute('href', 'assets/css/main-dark.css');
+                    localStorage.setItem('theme', 'assets/css/main-dark.css');
+                } else {
+                    themeStyle.setAttribute('href', 'assets/css/main.css');
+                    localStorage.setItem('theme', 'assets/css/main.css');
+                }
+            }
+
+            themeToggle.addEventListener('change', toggleTheme);
+        });
+    </script>
+
 
 </body>
 
