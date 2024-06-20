@@ -71,7 +71,7 @@ function modelLinkCreator(name, link) {
   a_node.target = "_blank";
 
   if (name !== "") {
-    text_node.appendChild(document.createTextNode(name));
+    text_node.appendChild(document.createTextNode(name.toUpperCase()));
     div_node.appendChild(text_node);
   }
 

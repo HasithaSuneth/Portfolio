@@ -12570,7 +12570,8 @@ pre .code {
 
 .model_title_text {
   color: white;
-  font-family: "Lobster Two", cursive;
+  /* font-family: "Lobster Two", cursive; */
+  font-family: inherit;
   text-shadow: #474747 3px 5px 2px;
 }
 
@@ -12586,11 +12587,14 @@ pre .code {
   text-align: center;
   height: 41px;
   line-height: 41px;
-  font-family: "Lobster", cursive;
+  /* font-family: "Lobster", cursive; */
+  font-family: inherit;
+  font-size: larger;
+  font-weight: 700;
   color: white;
   background-color: #282936;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
   margin: 0;
   border-radius: 20px 0 0 20px;
 }
@@ -12743,7 +12747,7 @@ pre .code {
 
 @media (max-width: 500px) {
   .model_link_text {
-    font-size: medium;
+    font-size: small;
   }
   .model_title_text {
     font-size: medium;
@@ -12752,7 +12756,8 @@ pre .code {
     font-size: medium;
   }
   #learn-more-id.learn-more .lm-button-text {
-    font-size: medium;
+    font-size: small;
+    line-height: 2.4;
   }
 }
 /* --------------- End - Model Function --------------- */
