@@ -1487,8 +1487,10 @@
 
             if (savedTheme) {
                 themeStyle.setAttribute('href', savedTheme);
-                if (savedTheme === 'main-dark.css') {
+                if (savedTheme === 'assets/css/main-dark.css') {
                     themeToggle.checked = true;
+                } else {
+                    themeToggle.checked = false;
                 }
             }
 
