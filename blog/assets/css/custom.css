@@ -37,7 +37,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 0 0px 15px #2020203d;
-  background: white url("/assets/images/icons/night.png");
+  background: white url("/assets/imgs/icons/night.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -54,7 +54,7 @@ input:checked + .theme-slider:before {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
-  background: white url("/assets/images/icons/sunny.png");
+  background: white url("/assets/imgs/icons/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
 }
