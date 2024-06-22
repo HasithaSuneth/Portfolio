@@ -776,11 +776,11 @@ pre code {
 }
 
 input:checked + .theme-slider {
-  background-color: #145890;
+  background-color: #ccc;
 }
 
 input:focus + .theme-slider {
-  box-shadow: 0 0 1px #145890;
+  box-shadow: 0 0 1px #ccc;
 }
 
 input:checked + .theme-slider:before {
