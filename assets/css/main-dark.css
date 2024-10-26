@@ -13279,25 +13279,27 @@ pre .code {
 }
 
 @media (max-width: 768px) {
+  .screen {
+    width: 95%;
+  }
+
   .terminal_emulator {
     font-size: 16px;
     line-height: 22px;
   }
 
   .terminal_emulator__field,
-  .terminal_emulator__command {
-    padding: 0 0.5em;
-    margin: 0 0 7px 0;
-  }
-
-  .terminal_emulator__field:after {
-    width: 0.8em;
-    height: 1.2em;
-    bottom: 0.2em;
+  .terminal_emulator__command,
+  .terminal_emulator__response {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .header-subtitle {
     padding-bottom: 10px;
   }
 }
-
