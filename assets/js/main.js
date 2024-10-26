@@ -248,3 +248,146 @@ window.addEventListener("load", function () {
   document.getElementById("loading").style.display = "none";
   document.querySelector("body").classList.remove("disable-scroll");
 });
+
+// ----------------------------------------
+// --------- HEADER IMAGE CHANGER ---------
+// ----------------------------------------
+
+const headerImages = [
+  "header1.webp",
+  "header2.webp",
+  "header3.webp",
+  "header4.webp",
+  "header5.webp",
+];
+
+function getRandomImage() {
+  const randomIndex = Math.floor(Math.random() * headerImages.length);
+  return `../assets/imgs/header/${headerImages[randomIndex]}`;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const headerElement = document.querySelector(".header");
+  headerElement.style.backgroundImage = `
+    linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(${getRandomImage()})
+  `;
+});
+
+// ----------------------------------------
+// ----------- HEADER TERMINAL ------------
+// ----------------------------------------
+
+var TerminalEmulator = {
+  init: function (screen) {
+    var inst = Object.create(this);
+    inst.screen = screen;
+    inst.createInput();
+
+    return inst;
+  },
+
+  createInput: function () {
+    var inputField = document.createElement("div");
+    var inputWrap = document.createElement("div");
+
+    inputField.className = "terminal_emulator__field";
+    inputField.innerHTML = "";
+    inputWrap.appendChild(inputField);
+    this.screen.appendChild(inputWrap);
+    this.field = inputField;
+    this.fieldwrap = inputWrap;
+  },
+
+  enterInput: function (input) {
+    return new Promise((resolve, reject) => {
+      var randomSpeed = (max, min) => {
+        return Math.random() * (max - min) + min;
+      };
+
+      var speed = randomSpeed(70, 90);
+      var i = 0;
+      var str = "";
+      var type = () => {
+        str = str + input[i];
+        this.field.innerHTML = str.replace(/ /g, "&nbsp;");
+        i++;
+
+        setTimeout(() => {
+          if (i < input.length) {
+            if (i % 5 === 0) speed = randomSpeed(80, 120);
+            type();
+          } else {
+            setTimeout(() => {
+              resolve();
+            }, 400);
+          }
+        }, speed);
+      };
+
+      type();
+    });
+  },
+
+  enterCommand: function () {
+    return new Promise((resolve, reject) => {
+      var resp = document.createElement("div");
+      resp.className = "terminal_emulator__command";
+      resp.innerHTML = this.field.innerHTML;
+      this.screen.insertBefore(resp, this.fieldwrap);
+
+      this.field.innerHTML = "";
+      resolve();
+    });
+  },
+
+  enterResponse: function (response) {
+    return new Promise((resolve, reject) => {
+      var resp = document.createElement("div");
+      resp.className = "terminal_emulator__response";
+      resp.innerHTML = response;
+      this.screen.insertBefore(resp, this.fieldwrap);
+
+      resolve();
+    });
+  },
+
+  wait: function (time, busy) {
+    busy = busy === undefined ? true : busy;
+    return new Promise((resolve, reject) => {
+      if (busy) {
+        this.field.classList.add("waiting");
+      } else {
+        this.field.classList.remove("waiting");
+      }
+      setTimeout(() => {
+        resolve();
+      }, time);
+    });
+  },
+
+  reset: function () {
+    return new Promise((resolve, reject) => {
+      this.field.classList.remove("waiting");
+      resolve();
+    });
+  },
+};
+
+var TE = TerminalEmulator.init(document.getElementById("screen"));
+
+TE.wait(1000, false)
+  .then(
+    TE.enterInput.bind(
+      TE,
+      "System Administration | Software Development | Web Development"
+    )
+  )
+  .then(TE.enterCommand.bind(TE, 2000))
+  .then(
+    TE.enterInput.bind(
+      TE,
+      "Electronic Development | Technical & IT Support | Graphic Design | Video Editing "
+    )
+  )
+  .then(TE.reset.bind(TE));

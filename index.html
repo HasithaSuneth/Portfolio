@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Google Fonts -->
     <!-- Preload header image -->
-    <link rel="preload" href="assets/imgs/header.webp" as="image">
+    <!-- <link rel="preload" href="assets/imgs/header/header1.webp" as="image"> -->
     <!-- Styles -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap">
@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/44b83b4405.js" crossorigin="anonymous"></script>
     <!-- Bootstrap + main styles -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/main.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/main-dark.css">
 
 </head>
 
@@ -66,9 +66,9 @@
             <div class="header-content">
                 <span class="header-text header-text-h4 header-subtitle">Hello, I am</span>
                 <span class="header-text header-text-h2 header-title">Hasitha Suneth</span>
-                <span class="header-text header-text-h6 header-mono">Systems Administrator | Software Developer | Web
-                    Developer | Electronic Developer | Technical & IT Supporter |
-                    Graphic Designer | Video Editor</span>
+                <div class="screen">
+                    <div id="screen" class="terminal_emulator"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -531,18 +531,45 @@
                                     <div class="experience__icon  experience__icon--javascript">
                                         <div class="experience__icon-description">JavaScript</div>
                                     </div>
-                                    <div class="experience__icon  experience__icon--golang">
-                                        <div class="experience__icon-description">Golang</div>
+                                    <div class="experience__icon  experience__icon--react">
+                                        <div class="experience__icon-description">React</div>
                                     </div>
-                                    <!-- <div class="experience__icon  experience__icon--c">
-                                    <div class="experience__icon-description">C++</div>
-                                </div> -->
-                                    <div class="experience__icon  experience__icon--r">
-                                        <div class="experience__icon-description">R</div>
+                                    <div class="experience__icon  experience__icon--codeigniter">
+                                        <div class="experience__icon-description">CodeIgniter</div>
                                     </div>
-                                    <!-- <div class="experience__icon  experience__icon--mickroc">
-                                    <div class="experience__icon-description">MikroC</div>
-                                </div> -->
+                                    <div class="experience__icon  experience__icon--flask">
+                                        <div class="experience__icon-description">Flask</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--wordpress">
+                                        <div class="experience__icon-description">WordPress</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--php">
+                                        <div class="experience__icon-description">PHP</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--sql">
+                                        <div class="experience__icon-description">SQL</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--html5">
+                                        <div class="experience__icon-description">HTML5</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--bootstrap">
+                                        <div class="experience__icon-description">Bootstrap</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--css3">
+                                        <div class="experience__icon-description">CSS3</div>
+                                    </div>
+                                    <!-- <div class="experience__icon  experience__icon--cakephp">
+                                        <div class="experience__icon-description">CakePHP</div>
+                                    </div> -->
+                                    <!-- <div class="experience__icon  experience__icon--mysql">
+                                        <div class="experience__icon-description">MySQL</div>
+                                    </div> -->
+                                    <!-- <div class="experience__icon  experience__icon--jquery">
+                                        <div class="experience__icon-description">jQuery</div>
+                                    </div> -->
+                                    <!-- <div class="experience__icon  experience__icon--sass">
+                                        <div class="experience__icon-description">SASS</div>
+                                    </div> -->
                                 </div>
                                 <div class="experience__icons-wrapper">
                                     <div class="experience__icon  experience__icon--pic">
@@ -559,49 +586,11 @@
                                     </div>
                                 </div>
                                 <div class="experience__icons-wrapper">
-                                    <div class="experience__icon  experience__icon--react">
-                                        <div class="experience__icon-description">React</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--codeigniter">
-                                        <div class="experience__icon-description">CodeIgniter</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--cakephp">
-                                        <div class="experience__icon-description">CakePHP</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--wordpress">
-                                        <div class="experience__icon-description">WordPress</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--php">
-                                        <div class="experience__icon-description">PHP</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--html5">
-                                        <div class="experience__icon-description">HTML5</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--css3">
-                                        <div class="experience__icon-description">CSS3</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--mysql">
-                                        <div class="experience__icon-description">MySQL</div>
-                                    </div>
-                                    <!-- <div class="experience__icon  experience__icon--bootstrap">
-                                    <div class="experience__icon-description">Bootstrap 3</div>
-                                </div> -->
-                                    <!-- <div class="experience__icon  experience__icon--jquery">
-                                    <div class="experience__icon-description">jQuery</div>
-                                </div>
-                                <div class="experience__icon  experience__icon--sass">
-                                    <div class="experience__icon-description">SASS</div>
-                                </div> -->
-                                </div>
-                                <div class="experience__icons-wrapper">
                                     <div class="experience__icon  experience__icon--docker">
                                         <div class="experience__icon-description">Docker</div>
                                     </div>
                                     <div class="experience__icon  experience__icon--linux">
                                         <div class="experience__icon-description">Linux</div>
-                                    </div>
-                                    <div class="experience__icon  experience__icon--bash">
-                                        <div class="experience__icon-description">Bash</div>
                                     </div>
                                     <div class="experience__icon  experience__icon--git">
                                         <div class="experience__icon-description">Git</div>
@@ -618,12 +607,18 @@
                                     <div class="experience__icon  experience__icon--web-server">
                                         <div class="experience__icon-description">Web Servers</div>
                                     </div>
+                                    <div class="experience__icon  experience__icon--cloud">
+                                        <div class="experience__icon-description">Cloud</div>
+                                    </div>
+                                    <!-- <div class="experience__icon  experience__icon--bash">
+                                        <div class="experience__icon-description">Bash</div>
+                                    </div> -->
                                     <!-- <div class="experience__icon  experience__icon--apache">
-                                    <div class="experience__icon-description">Apache</div>
-                                </div>
-                                <div class="experience__icon  experience__icon--nginx">
-                                    <div class="experience__icon-description">Nginx</div>
-                                </div> -->
+                                        <div class="experience__icon-description">Apache</div>
+                                    </div>
+                                    <div class="experience__icon  experience__icon--nginx">
+                                        <div class="experience__icon-description">Nginx</div>
+                                    </div> -->
                                 </div>
                                 <div class="experience__icons-wrapper">
                                     <div class="experience__icon  experience__icon--photoshop"
@@ -742,7 +737,7 @@
                                         <h6 class="title">SearchER</h6>
                                         <p class="subtitle">Film Category Database Software developed using Python with
                                             Tkinter module.</p>
-                                        <p class="subtitle_tag">#Python&ensp;#Tkinter&ensp;#SQLite</p>
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;Tkinter&ensp;|&ensp;SQLite</p>
                                     </div>
                                 </div>
                             </div>
@@ -763,7 +758,7 @@
                                         <p class="subtitle">Movies / TV series details finder software developed by
                                             using
                                             Python with PyQt5 module and OMDb API.</p>
-                                        <p class="subtitle_tag">#Python&ensp;#PyQt5&ensp;#OMDb</p>
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;PyQt5&ensp;|&ensp;OMDb-API</p>
                                     </div>
                                 </div>
                             </div>
@@ -783,7 +778,7 @@
                                         <h6 class="title">Student Management System</h6>
                                         <p class="subtitle">Student Management System developed using Python with
                                             Tkinter module.</p>
-                                        <p class="subtitle_tag">#Python&ensp;#Tkinter&ensp;#SQLite</p>
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;Tkinter&ensp;|&ensp;SQLite</p>
                                     </div>
                                 </div>
                             </div>
@@ -804,7 +799,7 @@
                                         <p class="subtitle">Movies / TV series details finder software developed by
                                             using
                                             Python with OMDb API.</p>
-                                        <p class="subtitle_tag">#Python&ensp;#OMDb</p>
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;OMDb-API</p>
                                     </div>
                                 </div>
                             </div>
@@ -825,7 +820,7 @@
                                         <p class="subtitle">Remove unnecessary parts from movie/file names and rename
                                             the
                                             files to a proper format. The script developed using Python.</p>
-                                        <p class="subtitle_tag">#Python</p>
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;OMDb-API</p>
                                     </div>
                                 </div>
                             </div>
@@ -845,7 +840,7 @@
                                         <p class="subtitle">Applications and tools developed with the React JavaScript
                                             library.</p>
                                         <p class="subtitle_tag">
-                                            #React&ensp;#Calculator&ensp;#MarkdownEditor&ensp;#25+5Clock&ensp;#DrumMachine&ensp;#QuoteGenerator
+                                            React&ensp;|&ensp;Calculator&ensp;|&ensp;MarkdownEditor&ensp;|&ensp;25+5Clock&ensp;|&ensp;DrumMachine&ensp;|&ensp;QuoteGenerator
                                         </p>
                                     </div>
                                 </div>
@@ -866,7 +861,8 @@
                                         <p class="subtitle">2D Games developed using Vanilla JavaScript and CSS.
                                             Compatible
                                             with mobile devices.</p>
-                                        <p class="subtitle_tag">#2dGames&ensp;#JavaScript&ensp;#HTML&ensp;#CSS</p>
+                                        <p class="subtitle_tag">
+                                            2dGames&ensp;|&ensp;JavaScript&ensp;|&ensp;HTML&ensp;|&ensp;CSS</p>
                                     </div>
                                 </div>
                             </div>
@@ -885,7 +881,8 @@
                                         <h6 class="title">Ridhi Silver Jewelry Website | WordPress</h6>
                                         <p class="subtitle">Ridhi Silver Jewelry's e-commerce website was developed
                                             using WordPress.</p>
-                                        <p class="subtitle_tag">#Ridhi.lk&ensp;#WordPress&ensp;#E-Commerce</p>
+                                        <p class="subtitle_tag">Ridhi.lk&ensp;|&ensp;WordPress&ensp;|&ensp;E-Commerce
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -905,7 +902,9 @@
                                             using PHP and CodeIgniter framework. This site is compatible and works with
                                             the
                                             OrangeHRM open-source project.</p>
-                                        <p class="subtitle_tag">#PHP&ensp;#CodeIgniter&ensp;#HTML&ensp;#CSS&ensp;#JS</p>
+                                        <p class="subtitle_tag">
+                                            PHP&ensp;|&ensp;CodeIgniter&ensp;|&ensp;HTML&ensp;|&ensp;CSS&ensp;|&ensp;JS
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -929,7 +928,8 @@
                                         <p class="subtitle">This project mainly focused
                                             on to correct orientation of the ice cream cups before moving to the
                                             manufacturing details label printing machine.</p>
-                                        <p class="subtitle_tag">#OpenCV&ensp;#Python&ensp;#RaspberryPi&ensp;#Arduino
+                                        <p class="subtitle_tag">
+                                            OpenCV&ensp;|&ensp;Python&ensp;|&ensp;RaspberryPi&ensp;|&ensp;Arduino
                                         </p>
                                     </div>
                                 </div>
@@ -951,7 +951,7 @@
                                         <p class="subtitle">Keypad-based electronic locking system developed using
                                             Arduino
                                             development platform.</p>
-                                        <p class="subtitle_tag">#Arduino&ensp;#C++&ensp;#Electronics
+                                        <p class="subtitle_tag">Arduino&ensp;|&ensp;C++&ensp;|&ensp;Electronics
                                         </p>
                                     </div>
                                 </div>
@@ -972,7 +972,7 @@
                                         <h6 class="title">Keypad-based locking system - PIC</h6>
                                         <p class="subtitle">Keypad-based electronic locking system developed using PIC
                                             Micro-controller and MikroC embedded-C compiler.</p>
-                                        <p class="subtitle_tag">#PIC&ensp;#MikroC&ensp;#Electronics
+                                        <p class="subtitle_tag">PIC&ensp;|&ensp;MikroC&ensp;|&ensp;Electronics
                                         </p>
                                     </div>
                                 </div>
@@ -993,7 +993,7 @@
                                         <h6 class="title">Voltage, Temperature & Frequency Meter - PIC</h6>
                                         <p class="subtitle">Voltage, Temperature & Frequency Meter developed using PIC
                                             Micro-controller and MikroC embedded-C compiler.</p>
-                                        <p class="subtitle_tag">#PIC&ensp;#MikroC&ensp;#Electronics
+                                        <p class="subtitle_tag">PIC&ensp;|&ensp;MikroC&ensp;|&ensp;Electronics
                                         </p>
                                     </div>
                                 </div>
@@ -1018,7 +1018,7 @@
                                             processing.
                                         </p>
                                         <p class="subtitle_tag">
-                                            #Python&ensp;#YOLOv3&ensp;#OpenCV&ensp;#Darknet&ensp;#SUMO
+                                            Python&ensp;|&ensp;YOLOv3&ensp;|&ensp;OpenCV&ensp;|&ensp;Darknet&ensp;|&ensp;SUMO
                                         </p>
                                     </div>
                                 </div>
@@ -1041,7 +1041,7 @@
                                             using
                                             user data obtained from the OrangeHRM system database.
                                         </p>
-                                        <p class="subtitle_tag">#Python
+                                        <p class="subtitle_tag">Python
                                         </p>
                                     </div>
                                 </div>
@@ -1065,7 +1065,7 @@
                                             movie
                                             folder icon creator.
                                         </p>
-                                        <p class="subtitle_tag">#Python&ensp;#OMDB
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;OMDb-API
                                         </p>
                                     </div>
                                 </div>
@@ -1088,7 +1088,7 @@
                                             sends
                                             an email if one or more results get failed.
                                         </p>
-                                        <p class="subtitle_tag">#Python
+                                        <p class="subtitle_tag">Python
                                         </p>
                                     </div>
                                 </div>
@@ -1113,7 +1113,7 @@
                                             user
                                             can add errors to the ignore list in order to ignore unwanted notifications.
                                         </p>
-                                        <p class="subtitle_tag">#Python
+                                        <p class="subtitle_tag">Python
                                         </p>
                                     </div>
                                 </div>
@@ -1130,7 +1130,7 @@
                                         <h6 class="title">Website | WordPress</h6>
                                         <p class="subtitle">A single-page website was developed on WordPress using the
                                             Elementor Page Builder plugin and the Astra theme.</p>
-                                        <p class="subtitle_tag">#WordPress&ensp;#Elementor (Free)&ensp;#Astra
+                                        <p class="subtitle_tag">WordPress&ensp;|&ensp;Elementor (Free)&ensp;|&ensp;Astra
                                             (Free)</p>
                                     </div>
                                 </div>
@@ -1151,7 +1151,7 @@
                                         </h6>
                                         <p class="subtitle">Ministry of Technology, Sri Lanka website revised with
                                             Docusaurus framework and ReactJS.</p>
-                                        <p class="subtitle_tag">#Mot.gov.lk&ensp;#React&ensp;#Docusaurus</p>
+                                        <p class="subtitle_tag">Mot.gov.lk&ensp;|&ensp;React&ensp;|&ensp;Docusaurus</p>
                                     </div>
                                 </div>
                             </div>
@@ -1174,7 +1174,7 @@
                                             extraction capabilities. Developed on the powerful Tesseract OCR engine and
                                             integrated with Python and Tkinter module.
                                         </p>
-                                        <p class="subtitle_tag">#Python&ensp;#Tesseract&ensp;#Tkinter
+                                        <p class="subtitle_tag">Python&ensp;|&ensp;Tesseract&ensp;|&ensp;Tkinter
                                         </p>
                                     </div>
                                 </div>
@@ -1192,7 +1192,7 @@
                                     <div class="text-holder">
                                         <h6 class="title">OrangeHRM</h6>
                                         <p class="subtitle">Open-source Human Resource Management (HRM) software</p>
-                                        <p class="subtitle_tag">#Guide&ensp;#Installation&ensp;#Upgrade</p>
+                                        <p class="subtitle_tag">Guide&ensp;|&ensp;Installation&ensp;|&ensp;Upgrade</p>
                                     </div>
                                 </div>
                             </div>
@@ -1209,7 +1209,7 @@
                                     <div class="text-holder">
                                         <h6 class="title">SnipeIT</h6>
                                         <p class="subtitle">Open-source Asset Management System software</p>
-                                        <p class="subtitle_tag">#Guide&ensp;#Installation&ensp;#Docker</p>
+                                        <p class="subtitle_tag">Guide&ensp;|&ensp;Installation&ensp;|&ensp;Docker</p>
                                     </div>
                                 </div>
                             </div>
@@ -1226,7 +1226,7 @@
                                     <div class="text-holder">
                                         <h6 class="title">Portainer</h6>
                                         <p class="subtitle">Open-source management UI that manage containers</p>
-                                        <p class="subtitle_tag">#Guide&ensp;#Installation&ensp;#Docker</p>
+                                        <p class="subtitle_tag">Guide&ensp;|&ensp;Installation&ensp;|&ensp;Docker</p>
                                     </div>
                                 </div>
                             </div>
@@ -1488,9 +1488,9 @@
             if (savedTheme) {
                 themeStyle.setAttribute('href', savedTheme);
                 if (savedTheme === 'assets/css/main-dark.css') {
-                    themeToggle.checked = true;
-                } else {
                     themeToggle.checked = false;
+                } else {
+                    themeToggle.checked = true;
                 }
             }
 
@@ -1507,7 +1507,6 @@
             themeToggle.addEventListener('change', toggleTheme);
         });
     </script>
-
 
 </body>
 
