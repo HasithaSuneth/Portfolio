@@ -111,7 +111,8 @@
   --blog-p: var(--tundora); */
 
   /* dark theme */
-  --navbar-bg: var(--shade-dark);
+  /* --navbar-bg: var(--shade-dark); */
+  --navbar-bg: var(--shark);
   --navbar-txt: var(--shade-white);
   --navbar-txt-hover: var(--shade-blue);
   --navbar-txt-act: var(--torea-bay3);
@@ -739,7 +740,7 @@ pre code {
   display: inline-block;
   width: 26px;
   height: 50px;
-  z-index: 8;
+  z-index: 50;
 }
 
 .theme-switch input {
@@ -12004,6 +12005,11 @@ p {
 }
 
 /* blog wrapper */
+blog {
+  position: relative;
+  z-index: 10;
+}
+
 #blog .main-title {
   color: var(--blog-main-title);
 }
@@ -12280,6 +12286,11 @@ pre .code {
   font-size: 14px;
 }
 
+footer {
+  position: relative;
+  z-index: 10;
+}
+
 .footer {
   background: #17263c;
 }
@@ -12316,6 +12327,7 @@ pre .code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--white);
+  z-index: 1;
 }
 
 .header .container {
@@ -12414,6 +12426,11 @@ pre .code {
   background: rgba(242, 244, 247, 0.15);
 }
 
+about {
+  position: relative;
+  z-index: 10;
+}
+
 #about {
   scroll-margin-top: 20px;
 }
@@ -12443,12 +12460,22 @@ pre .code {
   border-right: none;
 }
 
+portfolio {
+  position: relative;
+  z-index: 10;
+}
+
 #portfolio {
   scroll-margin-top: 30px;
 }
 
 .portfolio-section {
   padding: 70px 0;
+}
+
+contact {
+  position: relative;
+  z-index: 10;
 }
 
 .contact {
@@ -12634,7 +12661,7 @@ pre .code {
 .slide-modal {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -13302,4 +13329,31 @@ pre .code {
   .header-subtitle {
     padding-bottom: 10px;
   }
+}
+
+/* ---------------------------------------- */
+/* ---------- BACKGROUND THEME ------------ */
+/* ---------------------------------------- */
+
+.animatedSection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.animationCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232627;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.zindex10 {
+  z-index: 10;
+  position: relative;
 }
