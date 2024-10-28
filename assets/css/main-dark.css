@@ -12993,7 +12993,7 @@ contact {
 .glowing-card:hover:before,
 .glowing-card:hover:after {
   animation: none;
-  opacity: 0;
+  opacity: 1;
 }
 
 .glowing-card::before {
