@@ -27,6 +27,7 @@
   --tundora: #444444;
   --dark: #343a40;
   --dark-light: #414950;
+  /* --dark-light: rgba(65, 73, 80, 0.9); */
   --shark: #212529;
   --mine-shaft: #322f2f;
   --black: #000000;
@@ -12008,6 +12009,7 @@ p {
 blog {
   position: relative;
   z-index: 10;
+  opacity: 0.9;
 }
 
 #blog .main-title {
