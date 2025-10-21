@@ -380,16 +380,11 @@ TE.wait(1000, false)
   .then(
     TE.enterInput.bind(
       TE,
-      "System Administration | Software Development | Web Development"
+      "System Administration | Full-Stack Development | Electronic Development"
     )
   )
   .then(TE.enterCommand.bind(TE, 2000))
-  .then(
-    TE.enterInput.bind(
-      TE,
-      "Electronic Development | Technical & IT Support | Graphic Design | Video Editing "
-    )
-  )
+  .then(TE.enterInput.bind(TE, "Technical & IT Support "))
   .then(TE.reset.bind(TE));
 
 // ----------------------------------------
