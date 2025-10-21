@@ -840,8 +840,12 @@ input:checked + .theme-slider:before {
   display: inline-block;
   width: 10%;
   height: 100px;
-  background-size: 100px 100px;
-  background-position: 50%;
+}
+
+.experience__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .experience__icon:hover {
@@ -861,118 +865,6 @@ input:checked + .theme-slider:before {
   color: var(--shade-white);
   width: 200px;
   text-align: center;
-}
-
-.experience__icon--html5 {
-  background-image: url("../imgs/exp/exp_html5.svg");
-}
-.experience__icon--css3 {
-  background-image: url("../imgs/exp/exp_css3.svg");
-}
-.experience__icon--javascript {
-  background-image: url("../imgs/exp/exp_javascript.svg");
-}
-.experience__icon--sass {
-  background-image: url("../imgs/exp/exp_sass.svg");
-}
-.experience__icon--jquery {
-  background-image: url("../imgs/exp/exp_jquery.svg");
-}
-.experience__icon--bootstrap {
-  background-image: url("../imgs/exp/exp_bootstrap.webp");
-}
-.experience__icon--git {
-  background-image: url("../imgs/exp/exp_git.svg");
-}
-.experience__icon--photoshop {
-  background-image: url("../imgs/exp/exp_photoshop.webp");
-}
-.experience__icon--python {
-  background-image: url("../imgs/exp/exp_python.webp");
-}
-.experience__icon--c {
-  background-image: url("../imgs/exp/exp_c++.webp");
-}
-.experience__icon--mickroc {
-  background-image: url("../imgs/exp/exp_mickroc.webp");
-}
-.experience__icon--react {
-  background-image: url("../imgs/exp/exp_react.webp");
-}
-.experience__icon--php {
-  background-image: url("../imgs/exp/exp_php.webp");
-}
-.experience__icon--mysql {
-  background-image: url("../imgs/exp/exp_mysql.webp");
-}
-.experience__icon--docker {
-  background-image: url("../imgs/exp/exp_docker.webp");
-}
-.experience__icon--apache {
-  background-image: url("../imgs/exp/exp_apache.webp");
-}
-.experience__icon--nginx {
-  background-image: url("../imgs/exp/exp_nginx.webp");
-}
-.experience__icon--director {
-  background-image: url("../imgs/exp/exp_director.webp");
-}
-.experience__icon--codeigniter {
-  background-image: url("../imgs/exp/exp_codeigniter.webp");
-}
-.experience__icon--raspberrypi {
-  background-image: url("../imgs/exp/exp_raspberry.webp");
-}
-.experience__icon--arduino {
-  background-image: url("../imgs/exp/exp_arduino.webp");
-}
-.experience__icon--pic {
-  background-image: url("../imgs/exp/exp_pic.webp");
-}
-.experience__icon--pcb {
-  background-image: url("../imgs/exp/exp_pcb.webp");
-}
-.experience__icon--wordpress {
-  background-image: url("../imgs/exp/exp_wordpress.webp");
-}
-.experience__icon--git {
-  background-image: url("../imgs/exp/exp_git.webp");
-}
-.experience__icon--cakephp {
-  background-image: url("../imgs/exp/exp_cakephp.webp");
-}
-.experience__icon--linux {
-  background-image: url("../imgs/exp/exp_linux.webp");
-}
-.experience__icon--bash {
-  background-image: url("../imgs/exp/exp_bash.webp");
-}
-.experience__icon--golang {
-  background-image: url("../imgs/exp/exp_golang.webp");
-}
-.experience__icon--r {
-  background-image: url("../imgs/exp/exp_r.webp");
-}
-.experience__icon--ansible {
-  background-image: url("../imgs/exp/exp_ansible.webp");
-}
-.experience__icon--jenkins {
-  background-image: url("../imgs/exp/exp_jenkins.webp");
-}
-.experience__icon--terraform {
-  background-image: url("../imgs/exp/exp_terraform.webp");
-}
-.experience__icon--web-server {
-  background-image: url("../imgs/exp/exp_web-server.webp");
-}
-.experience__icon--flask {
-  background-image: url("../imgs/exp/exp_flask.webp");
-}
-.experience__icon--sql {
-  background-image: url("../imgs/exp/exp_sql.webp");
-}
-.experience__icon--cloud {
-  background-image: url("../imgs/exp/exp_cloud.webp");
 }
 
 /* -------------- End Experience --------------- */
